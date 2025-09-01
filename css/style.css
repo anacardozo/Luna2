@@ -1,0 +1,645 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+}
+
+:root{
+    --background-color: #005A63;
+    --text-color-primary: #fff;
+    --text-color-secondary: #FFDDD2;
+    --blur: #252525;
+    --highlight-color: rgba(129, 127, 127, 0.2);
+}
+
+body{
+    background-color: var(--background-color);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+header{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between; /*fica um em cada canto*/
+    align-items: center;
+    z-index: 6;
+}
+
+header nav ul li{
+    font-family: "MuseoModerno", sans-serif;
+    color: var(--background-color);
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.img-bg{
+    width: 50%;
+    height: 100vh;
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+form{
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 100%;
+    margin-top: 40%;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: 700;
+    gap: 55px;
+    color: var(--text-color-secondary);
+}
+
+form h1{
+    font-size: 60px;
+    letter-spacing: 7px;
+    font-weight: 700;
+    color: var(--text-color-primary);
+    
+}
+
+form div{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+div input{
+    width: 100%;
+    max-width: 400px;
+    height: 30px;
+    border:none;
+    background: none; 
+    border-bottom: 1px solid var(--text-color-secondary);
+    outline: none;
+    color:var(--text-color-primary);
+    cursor: pointer;
+    position: absolute;
+}
+
+div input::placeholder{
+    color: var(--text-color-primary);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+div .icone{
+    position: absolute;
+    right: 0;    
+}
+
+.box-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-login{
+    width: 140px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--text-color-secondary);
+    color: var(--background-color);
+    box-shadow: 0px 0px 23px -4px var(--blur);
+    cursor: pointer;
+}
+
+
+.txt-1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt-1 p{
+    color: var(--text-color-primary);
+    font-weight: 300;
+    font-size: 19px;
+
+}
+
+.txt-1 p a{
+    text-decoration: none;
+    color: var(--text-color-secondary);
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.redes a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border-radius: 50%;
+    transition: all 0.2s ;
+}
+
+.redes ion-icon {
+    font-size: 48px;
+    color: var(--text-color-secondary);
+}
+
+.redes a:hover{
+    background-color: var(--highlight-color);
+    border-radius: 50%;
+}
+
+/* Responsividade tela de Login */
+
+@media (max-width: 1024px){
+    .img-bg{
+    width: 50%;
+    height: 100vh;
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+form{
+    width: 400px;
+    margin-left: 70%;
+    font-size: 20px;
+}
+
+form h1{
+    font-size: 40px;
+}
+
+div input{
+    width: 300px;
+    height: 30px;
+}
+
+div input::placeholder{
+    color: var(--text-color-primary);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+div .icone{
+    right: 25%;    
+}
+
+.box-btn{
+    margin-right: 25%;
+}
+
+.btn-login{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    
+}
+
+.txt-1{
+    margin-right: 25%;
+}
+
+.txt-1 p{
+    font-size: 16px;
+
+}
+
+hr{
+    width: 300px;
+}
+
+.redes{
+    margin-right: 25%;
+}
+
+.redes ion-icon {
+    font-size: 38px;
+}
+}
+
+@media (max-width: 768px){
+
+form {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  margin-top: 40%;
+}
+
+
+.img-bg{
+    opacity: 0;
+}
+
+header nav ul li{
+    color: var(--text-color-primary );
+}
+
+
+form h1{
+    display: flex;
+    margin-left: 25%;
+    font-size: 60px;
+    align-items: center;
+}
+
+div input{
+    width: 300px;
+    height: 30px;
+}
+
+div input::placeholder{
+    color: var(--text-color-primary);
+    font-weight: 300;
+    font-size: 20px;
+}
+
+div .icone{
+    right: 25%;    
+}
+
+.box-btn{
+    margin: auto;
+}
+
+.btn-login{
+    width: 140px;
+    height: 45px;
+    font-size: 25px;
+    
+}
+
+.txt-1{
+    margin: auto;
+}
+
+.txt-1 p{
+    font-size: 20px;
+
+}
+
+hr{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.redes{
+    margin-top: -10%;
+    margin: auto;
+}
+
+.redes ion-icon {
+    font-size: 38px;
+}
+
+}
+
+@media (max-width: 480px){
+
+svg path{
+    opacity: 0;
+}
+
+
+form {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-top: 40%;
+  
+}
+
+header{
+    justify-content: center;
+    align-items: center;
+    margin-left: 22%;
+}
+
+.img-bg{
+    opacity: 0;
+}
+
+header nav ul li{
+    color: var(--text-color-primary );
+    margin: auto;
+}
+
+form h1{
+    display: flex;
+    margin-left: 20%;
+    font-size: 40px;
+    align-items: center;
+}
+
+div input{
+    max-width: 300px;
+    height: 30px;
+}
+
+div input::placeholder{
+    color: var(--text-color-primary);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+div .icone{
+    left: 70%;    
+}
+
+.box-btn{
+    margin-right: 45%;
+}
+
+.btn-login{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    
+}
+
+.txt-1{
+    margin-right: 35%;
+}
+
+.txt-1 p{
+    font-size: 16px;
+
+}
+
+hr{
+    width: 300px;
+    margin-right: 35%;
+}
+
+.redes{
+    margin-right: 35%;
+    margin-top: -10%;
+}
+
+.redes ion-icon {
+    font-size: 38px;
+}
+}
+
+@media (max-width: 360px){
+body{
+    overflow: hidden;
+}
+
+header{
+    justify-content: center;
+    align-items: center;
+    margin-left: 42%;
+}
+
+form {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-left: 32%;
+  margin-top: 40%;
+}
+
+
+.img-bg{
+    opacity: 0;
+}
+
+header nav ul li{
+    color: var(--text-color-primary );
+}
+
+form h1{
+    display: flex;
+    margin-left: 20%;
+    font-size: 40px;
+    align-items: center;
+}
+
+div input{
+    max-width: 300px;
+    height: 30px;
+}
+
+div input::placeholder{
+    color: var(--text-color-primary);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+div .icone{
+    left: 70%;    
+}
+
+.box-btn{
+    margin-left:25%;
+}
+
+.btn-login{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    
+}
+
+.txt-1{
+    margin-right: 35%;
+}
+
+.txt-1 p{
+    font-size: 16px;
+
+}
+
+hr{
+    width: 300px;
+    margin-right: 35%;
+}
+
+.redes{
+    margin-right: 35%;
+    margin-top: -10%;
+}
+
+.redes ion-icon {
+    font-size: 38px;
+}
+}
+@media (max-width: 1366px){
+
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* TELA DE CADASTRO */
+.principal{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+}
+
+.form-cadastro{
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20%;
+    margin-top: 40%;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 700;
+    gap: 50px;
+    color: var(--text-color-secondary);
+}
+
+.form-cadastro h1{
+    font-size: 60px;
+    letter-spacing: 7px;
+    font-weight: 700;
+    color: var(--text-color-primary);
+}
+
+.form-cadastro label{
+    width: 300px;
+}
+
+.box {
+    position: relative; /* Necessário para que o ícone seja relativo ao box */
+    width: 400px; /* mesma largura do input */
+}
+
+.box input {
+    width: 100%;
+    padding-right: 40px; /* espaço para o ícone */
+}
+
+.box .icone {
+    position: absolute;
+    top: 50%;
+    right: 5px; /* distância da borda direita do box */
+    transform: translateY(-50%);
+}
+.form-cadastro2{
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0%;
+    margin-top: 70.5%;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 700;
+    gap: 50px;
+    color: var(--text-color-secondary);
+}
+
+/* ----------------------- HOME ------------------------------------------ */
+
+.menu-lateral{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100vh;
+    color: var(--text-color-primary);
+    background-color: var(--background-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    z-index: 4;
+}
+
+.menu-lateral ion-icon{
+    color: var(--text-color-primary);
+    font-size: 40px;
+    font-weight: 0; 
+}
+
+.menu-lateral ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 100px;
+}
+
+.menu-lateral ul li{
+    padding: 30px 30px;
+    transition: all 0.5s;
+}
+
+.menu-lateral .active ul li:hover {
+    background-color: rgba(189, 189, 189, 0.5);
+    width: 300px;
+    margin-left: 30px;
+    border-radius: 50px;
+    z-index: 10;
+}
+
+
+.menu-lateral ul li a{
+    text-decoration: none;
+    color: var(--background-color);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.botao-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    font-size: 70px;
+    font-weight: 700;
+    top:10px;
+    left: 30px;
+    background: transparent;
+    border: none;
+    color: var(--text-color-primary);
+    outline: none;
+    z-index: 5;
+}
+
+.content{
+    position: absolute;
+    display: flex;
+    right: 0;
+    height: 100vh;
+    width: 92%;
+    background-color: var(--text-color-primary);
+    border-top-left-radius: 20px;
+    z-index: 6;
+}
