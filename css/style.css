@@ -577,6 +577,11 @@ hr{
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     z-index: 4;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-lateral.active{
+    z-index: 10;
 }
 
 .menu-lateral ion-icon{
@@ -596,12 +601,11 @@ hr{
     transition: all 0.5s;
 }
 
-.menu-lateral .active ul li:hover {
+.menu-lateral.active ul li:hover {
     background-color: rgba(189, 189, 189, 0.5);
     width: 300px;
     margin-left: 30px;
     border-radius: 50px;
-    z-index: 10;
 }
 
 
@@ -612,7 +616,12 @@ hr{
     display: flex;
     align-items: center;
     gap: 20px;
+    transition: all 0.5s ease-in-out;
     
+}
+
+.menu-lateral.active ul li a{
+    color: var(--text-color-primary);
 }
 
 .botao-menu{
@@ -630,6 +639,7 @@ hr{
     border: none;
     color: var(--text-color-primary);
     outline: none;
+    cursor: pointer;
     z-index: 5;
 }
 
@@ -642,4 +652,9 @@ hr{
     background-color: var(--text-color-primary);
     border-top-left-radius: 20px;
     z-index: 6;
+    transition: all 0.5s ease-in-out;
+}
+
+.content.active{
+    width: 83%;
 }
