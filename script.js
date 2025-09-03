@@ -6,3 +6,4 @@ menu.addEventListener('click', () => {
     menuLateral.classList.toggle('active');
     conteudo.classList.toggle('active');
 })
+

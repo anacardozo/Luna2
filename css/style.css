@@ -105,6 +105,7 @@ div .icone{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none ;
 }
 
 .btn-login{
@@ -114,13 +115,13 @@ div .icone{
     border-radius: 10px;
     font-size: 25px;
     font-weight: 700;
+    justify-content: center;
     text-align: center;
     background-color: var(--text-color-secondary);
     color: var(--background-color);
     box-shadow: 0px 0px 23px -4px var(--blur);
     cursor: pointer;
 }
-
 
 .txt-1{
     position: relative;
@@ -559,6 +560,21 @@ hr{
     font-weight: 700;
     gap: 50px;
     color: var(--text-color-secondary);
+}
+
+.btn-cadastro{
+    width: 140px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--text-color-secondary);
+    color: var(--background-color);
+    box-shadow: 0px 0px 23px -4px var(--blur);
+    cursor: pointer;
 }
 
 /* ----------------------- HOME ------------------------------------------ */
