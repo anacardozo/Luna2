@@ -10,6 +10,7 @@
     --background-color: #005A63;
     --text-color-primary: #fff;
     --text-color-secondary: #FFDDD2;
+    --text-color-tertiary: #000000;
     --blur: #252525;
     --highlight-color: rgba(129, 127, 127, 0.2);
 }
@@ -677,7 +678,7 @@ hr{
     display: flex;
     right: 0;
     height: 100vh;
-    width: 92%;
+    width: 92vw;
     background-color: var(--text-color-primary);
     border-top-left-radius: 20px;
     z-index: 6;
@@ -685,5 +686,49 @@ hr{
 }
 
 .content.active{
-    width: 83%;
+    width: 83vw;
+}
+
+.nav-pesquisa{
+    position: fixed;
+    display: flex;
+    justify-content:space-between;
+    padding: 30px 50px;
+    top: 0;
+    width: 90%;
+    z-index: 8;
+}
+
+.inputs-pesquisa{
+    display: flex;
+    align-items: center;
+    gap: 300px;
+    width: 300px;
+    color:var(--text-color-tertiary);
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+}
+
+.inputs-pesquisa ion-icon{
+    color: var(--background-color);
+    font-size: 20px;
+    z-index: 9;
+    padding: 0 20px;
+}
+
+.inputs-pesquisa input{
+    color: var(--text-color-tertiary);
+    border: none;
+    background-color: var(--text-color-primary);
+    border-radius: 5px;
+    width: 300px;
+    padding: 0 50px;
+    height: 35px;
+}
+
+.inputs-pesquisa input::placeholder{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: var(--text-color-tertiary);
 }
