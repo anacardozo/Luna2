@@ -520,6 +520,7 @@ hr{
     font-weight: 700;
     gap: 50px;
     color: var(--text-color-secondary);
+    z-index: 10;
 }
 
 .form-cadastro h1{
@@ -541,7 +542,9 @@ hr{
 .box input {
     width: 100%;
     padding-right: 40px; /* espaço para o ícone */
+    font-size: 16px;
 }
+
 
 .box .icone {
     position: absolute;
@@ -562,7 +565,17 @@ hr{
     color: var(--text-color-secondary);
 }
 
+.box-btn-cadastro {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 80px;
+    margin-left: 100%;
+}
+
 .btn-cadastro{
+    position: relative;
     width: 140px;
     height: 45px;
     border: none;
