@@ -13,6 +13,8 @@
     --text-color-tertiary: #000000;
     --blur: #252525;
     --highlight-color: rgba(129, 127, 127, 0.2);
+    --blur-secondary: rgba(0, 0, 0, 0.20);
+    --button-hover-color: rgba(0, 90, 99, 0.39);
 }
 
 body{
@@ -697,12 +699,25 @@ hr{
     top: 0;
     width: 90%;
     z-index: 8;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-pesquisa.active{
+    width: 80%;
+}
+
+.grupo-pesquisa {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* diminui a distância entre eles */
 }
 
 .inputs-pesquisa{
+    all: unset;
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 300px;
+    gap: 8px;
     width: 300px;
     color:var(--text-color-tertiary);
     font-family: 'Inter', sans-serif;
@@ -711,6 +726,7 @@ hr{
 
 .inputs-pesquisa ion-icon{
     color: var(--background-color);
+    align-items: center;
     font-size: 20px;
     z-index: 9;
     padding: 0 20px;
@@ -724,6 +740,7 @@ hr{
     width: 300px;
     padding: 0 50px;
     height: 35px;
+    
 }
 
 .inputs-pesquisa input::placeholder{
@@ -731,4 +748,63 @@ hr{
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     color: var(--text-color-tertiary);
+}
+
+.filtro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    gap: 10px;
+    padding-right: 10px;
+    background-color: var(--text-color-primary);
+    color: var(--background-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px var(--blur-secondary);
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+
+.filtro ion-icon{
+    font-size: 20px;
+}
+
+.filtro:hover{
+    background-color: var(--button-hover-color);
+    color: var(--text-color-tertiary);
+}
+
+.professores{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 5%;
+    background-color: gray;
+    margin-left: auto;
+}
+
+.professores h1{
+    padding: 40px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--background-color);
+    width: 100%;
+    text-align: center;
+}
+
+.cadastro-professores{
+    display: flex;
+    background-color: aqua;
+    width: 50%;
+    min-height: 100%;
+    margin: 0;
 }
