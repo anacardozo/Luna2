@@ -785,10 +785,11 @@ hr{
     justify-content:flex-start;
     align-items: flex-start;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     margin-top: 5%;
-    background-color: gray;
+    background-color: ray;
     margin-left: auto;
+    padding: 0;
 }
 
 .professores h1{
@@ -802,9 +803,51 @@ hr{
 }
 
 .cadastro-professores{
+    all: unset;
     display: flex;
-    background-color: aqua;
-    width: 50%;
+    background-color: transparent;
+    width: 100%;
     min-height: 100%;
     margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.grupo-esquerdo, 
+.grupo-direita{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    height: 70%;
+    background-color: transparent;
+}
+
+.box2{
+    display: flex;
+    width: 300px;
+    color: var(--background-color);
+}
+
+.box2 input{
+    border-color: var(--background-color);
+    color: var(--text-color-tertiary);
+}
+
+.box2 input::placeholder{
+    color: var(--background-color);
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.box2 label{
+    margin-bottom: 60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.box2 ion-icon{
+    font-size: 20px;
 }
