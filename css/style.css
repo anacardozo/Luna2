@@ -786,8 +786,8 @@ hr{
     align-items: flex-start;
     flex-direction: column;
     width: 50%;
-    margin-top: 5%;
-    background-color: ray;
+    margin-top: 4%;
+    background-color: transparent;
     margin-left: auto;
     padding: 0;
 }
@@ -807,7 +807,7 @@ hr{
     display: flex;
     background-color: transparent;
     width: 100%;
-    min-height: 100%;
+    /* min-height: 100%; */
     margin: 0;
     padding: 0;
     gap: 20px;
@@ -850,4 +850,116 @@ hr{
 
 .box2 ion-icon{
     font-size: 20px;
+}
+
+.professores p{
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--background-color);
+    width: 100%;
+    text-align: center;
+}
+
+.btns-imagem{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+.btn-camera{
+    display: flex;
+    text-align: left;
+    width: 150px;
+    height: 60px;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.btn-camera input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    height: 50px;
+    width: 130px;
+    border-radius: 5px;
+}
+
+.btn-camera ion-icon{
+    margin-left: 33%;
+    margin-top: 10px;
+    color: var(--text-color-secondary);
+    font-size: 30px;
+    z-index: 9;
+}
+
+input[type="file"]::-webkit-file-upload-button{
+    background-color: var(--background-color);
+    align-items: center;
+    border: none;
+    color: var(--text-color-primary);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    width: 150px;
+    height: 500px;
+}
+
+.btn-camera2{
+    display: flex;
+    text-align: left;
+    width: 150px;
+    height: 60px;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+.btn-camera2 input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    height: 50px;
+    width: 130px;
+    border-radius: 5px;
+}
+
+.btn-camera2 ion-icon{
+    margin-left: 33%;
+    margin-top: 10px;
+    color: var(--text-color-secondary);
+    font-size: 30px;
+    z-index: 9;
+}
+
+.salvar{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-salvar-pro{
+    padding: 10px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    color: var(--text-color-secondary);
+    width: 25%;
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
 }

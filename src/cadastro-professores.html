@@ -79,13 +79,14 @@
         </nav>
         <!-- Fim nav pesquisa -->
 
+        <!-- Cadastro Professores -->
         <div class="professores">
             <h1>CADASTRO PROFESSORES</h1>
 
             <form class="cadastro-professores">
                 <div class="grupo-esquerdo">
                     <div class="box2">
-                        <label for="Nome">Nome</label>
+                        <label for="Nome">NOME</label>
                         <input type="text" placeholder="Nome">
                         <ion-icon name="create" class="icone"></ion-icon>
                     </div>
@@ -139,6 +140,24 @@
                 </div>
                 </div>
             </form>
+
+            <!-- Botões imagem docente -->
+            <p class="text-pro">IMAGEM DO ROSTO DO DOCENTE</p>
+            <div class="btns-imagem">
+                <div class="btn-camera">
+                    <ion-icon name="camera"></ion-icon>
+                    <input type="file" name="imagem" accept="image/*" capture="camera">
+                </div>
+
+                <div class="btn-camera2">
+                    <ion-icon name="image"></ion-icon>
+                    <input type="file" name="imagem" accept="image/*" capture="camera">
+                </div>
+            </div>
+
+            <div class="salvar">
+                <button class="btn-salvar-pro">Salvar</button>
+            </div>       
         </div>
     </div>
     <script src="../script.js"></script>
