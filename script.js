@@ -8,3 +8,4 @@ menu.addEventListener("click", () => {
   conteudo.classList.toggle("active");
   navPesquisa.classList.toggle("active");
 });
+

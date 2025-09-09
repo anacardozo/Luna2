@@ -112,6 +112,7 @@ div .icone{
 }
 
 .btn-login{
+    display: flex;
     width: 140px;
     height: 45px;
     border: none;
@@ -119,10 +120,12 @@ div .icone{
     font-size: 25px;
     font-weight: 700;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    /* text-align: center; */
     background-color: var(--text-color-secondary);
     color: var(--background-color);
     box-shadow: 0px 0px 23px -4px var(--blur);
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -505,93 +508,123 @@ hr{
 /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 /* TELA DE CADASTRO */
 .principal{
-    width: 400px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 200px;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50vw;
+    height: 80vh;
+    margin-top: 15vh;
+    background-color: transparent;
+    margin-left: 40%;
+    padding: 0;
+}
+
+.principal h1{
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--text-color-primary);
+    margin-left: 40px;
+    margin-bottom: 40px;
+
 }
 
 .form-cadastro{
-    width: 400px;
+    all: unset;
     display: flex;
-    justify-content: flex-start;
-    margin-left: 20%;
-    margin-top: 40%;
-    flex-direction: column;
-    font-size: 20px;
-    font-weight: 700;
-    gap: 50px;
-    color: var(--text-color-secondary);
-    z-index: 10;
+    background-color: transparent;
+    width: 100%;
+    /* min-height: 100%; */
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
 }
 
-.form-cadastro h1{
-    font-size: 60px;
-    letter-spacing: 7px;
-    font-weight: 700;
+.grupo-esquerdo1, 
+.grupo-direita1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    height: 70%;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 300px;
+    color: var(--background-color);
+    gap: 50px;
+}
+
+.box input{
+    margin: 0;
+    padding: 0;
+    border-color: var(--text-color-secondary);
     color: var(--text-color-primary);
 }
 
-.form-cadastro label{
-    width: 300px;
-}
-
-.box {
-    position: relative; /* Necessário para que o ícone seja relativo ao box */
-    width: 400px; /* mesma largura do input */
-}
-
-.box input {
-    width: 100%;
-    padding-right: 40px; /* espaço para o ícone */
+.box input::placeholder{
+    margin: 0;
+    padding: 0;
+    color: var(--text-color-secondary);
     font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
 }
 
-
-.box .icone {
-    position: absolute;
-    top: 50%;
-    right: 5px; /* distância da borda direita do box */
-    transform: translateY(-50%);
-}
-.form-cadastro2{
-    width: 400px;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 0%;
-    margin-top: 70.5%;
-    flex-direction: column;
-    font-size: 20px;
+.box label{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
-    gap: 50px;
+    font-size: 18px;
+    color: var(--text-color-primary);
+}
+
+.box ion-icon{
+    font-size: 16px;
     color: var(--text-color-secondary);
 }
 
-.box-btn-cadastro {
-    width: 100%;
+.box-cadastrar{
     display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-    justify-content: center; 
-    margin-top: 80px;
-    margin-left: 100%;
+    margin-top: 50px;
 }
 
-.btn-cadastro{
-    position: relative;
-    width: 140px;
-    height: 45px;
+.btn-cadastrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-color-secondary);
+    width: 180px;
+    height: 50px;
     border: none;
     border-radius: 10px;
-    font-size: 25px;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--text-color-secondary);
+    font-size: 25px;
+    text-decoration: none;
     color: var(--background-color);
-    box-shadow: 0px 0px 23px -4px var(--blur);
     cursor: pointer;
 }
+
 
 /* ----------------------- HOME ------------------------------------------ */
 
