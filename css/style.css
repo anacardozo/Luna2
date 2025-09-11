@@ -8,6 +8,7 @@
 
 :root{
     --background-color: #005A63;
+    --background-color-secondary: #FDFDF8;
     --text-color-primary: #fff;
     --text-color-secondary: #FFDDD2;
     --text-color-tertiary: #000000;
@@ -663,6 +664,7 @@ hr{
 
 .menu-lateral ul li{
     padding: 30px 30px;
+    width: 300px;
     transition: all 0.5s;
 }
 
@@ -714,7 +716,7 @@ hr{
     right: 0;
     height: 100vh;
     width: 92vw;
-    background-color: var(--text-color-primary);
+    background-color: var(--background-color-secondary);
     border-top-left-radius: 20px;
     z-index: 6;
     transition: all 0.5s ease-in-out;
@@ -853,20 +855,22 @@ hr{
     border-radius: 50%;
 }
 
+
+/* TELA CADASTRO PROFESSORES */
 .professores{
     display: flex;
     justify-content:flex-start;
     align-items: flex-start;
     flex-direction: column;
     width: 50%;
-    margin-top: 4%;
+    margin-top: 3%;
     background-color: transparent;
     margin-left: auto;
     padding: 0;
 }
 
 .professores h1{
-    padding: 40px 0;
+    padding: 30px 0;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 22px;
@@ -1038,6 +1042,78 @@ input[type="file"]::-webkit-file-upload-button{
 }
 
 /* Tela Editar Dados */
+.alterar-dados-escola{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 4%;
+    margin-left: 70px;
+    background-color: transparent;
+    padding: 0;
+}
+
+.alterar-dados-escola h1{
+    padding: 40px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--background-color);
+    width: 100%;
+    text-align: center;
+}
+
+.alterar-escola{
+    all: unset;
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    /* min-height: 100%; */
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.grupo-esquerdo, 
+.grupo-direita{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    height: 70%;
+    background-color: transparent;
+}
+
+.box2{
+    display: flex;
+    width: 300px;
+    color: var(--background-color);
+}
+
+.box2 input{
+    border-color: var(--background-color);
+    color: var(--text-color-tertiary);
+}
+
+.box2 input::placeholder{
+    color: var(--background-color);
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.box2 label{
+    margin-bottom: 60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.box2 ion-icon{
+    font-size: 20px;
+}
+
 
 .alterar{
     display: flex;
@@ -1060,7 +1136,92 @@ input[type="file"]::-webkit-file-upload-button{
     color: var(--text-color-secondary);
     width: 25%;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 60px;
     text-align: center;
     cursor: pointer;
+}
+
+/* Mostrando Dados */
+
+.dados{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--text-color-primary);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 0px 23px -4px var(--blur);
+    width: 30%;
+    height: 100vh;
+    margin-left: auto;
+}
+
+.svg-dados{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    
+}
+
+.img-escola-dados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: transparent;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-escola-dados img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.apresentacao-dados{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: var(--text-color-primary);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    width: 250px;
+    height: 420px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.dados-escola{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.box3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box3 label{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: var(--background-color);
+}
+
+.box3 p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
 }
