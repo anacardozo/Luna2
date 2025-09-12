@@ -83,6 +83,88 @@
 
             </div>
         </nav>
+
+        <!-- Cadastro Alunos -->
+        <div class="alunos">
+            <h1>CADASTRO ALUNO</h1>
+
+            <form class="cadastro-alunos">
+                <div class="grupo-esquerdo3">
+                <!-- Dados do cadastro dos alunos -->
+                    <div class="box4">
+                        <label for="NomeAluno">NOME</label>
+                        <input type="text" placeholder="Nome" class="nomeAluno">
+                        <ion-icon name="create" class="icone"></ion-icon>
+                    </div>
+                    <div class="box4">
+                        <label for="CPFAluno">CPF</label>
+                        <input type="text" placeholder="CPF" class="cpfAluno">
+                        <ion-icon name="create" class="icone"></ion-icon>
+                    </div>
+                    <div class="box4">
+                        <label for="Serie">Serie</label>
+                        <input type="text" placeholder="Serie" class="serie">
+                        <ion-icon name="create" class="icone"></ion-icon>
+                    </div>
+                    <div class="box4">
+                        <label for="RA">RA</label>
+                        <input type="text" placeholder="Indique o RA da criança" class="ra">
+                        <ion-icon name="create" class="icone"></ion-icon>
+                    </div>
+                    <!-- Botões imagem Laudo -->
+                        <p class="text-pro">LAUDO DE TDAH DA CRIANÇA</p>
+                    <div class="btns-imagem2">
+                        <div class="btn-camera3">
+                            <ion-icon name="camera"></ion-icon>
+                            <input type="file" name="imagem"    accept="image/*" capture="camera" class="img-laudo">
+                        </div>
+
+                        <div class="btn-camera4">
+                            <ion-icon name="image"></ion-icon>
+                            <input type="file" name="imagem" accept="image/*" capture="camera" class="img-laudo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grupo-direita3">
+                    <div class="box4">
+                        <label for="SobrenomeAluno">SOBRENOME</label>
+                        <input type="text" placeholder="Sobrenome" class="sobrenomeAluno">
+                        <ion-icon name="create" class="icone"></ion-icon>
+                    </div>
+                    <div class="box4">
+                        <label for="idade">IDADE</label>
+                        <input type="text" placeholder="Idade" class="idade">
+                        <ion-icon name="create" class="icone"></ion-icon>
+                    </div>
+                    <div class="box4">
+                        <label for="escola">ESCOLA</label>
+                        <input type="text" placeholder="Escola" class="escola">
+                        <ion-icon name="create" class="icone"></ion-icon>
+                    </div>
+                    <div class="box4">
+                        <label for="E-mailAluno">E-MAIL</label>
+                        <input type="text" placeholder="E-mail" class="emailAluno">
+                        <ion-icon name="create" class="icone"></ion-icon>
+                    </div>
+                    <!-- Botões imagem Laudo -->
+                        <p class="text-pro">IMAGEM DO ROSTO DA CRIANÇA</p>
+                    <div class="btns-imagem2">
+                        <div class="btn-camera5">
+                            <ion-icon name="camera"></ion-icon>
+                            <input type="file" name="imagem"    accept="image/*" capture="camera" class="img-rosto-crianca">
+                        </div>
+
+                        <div class="btn-camera6">
+                            <ion-icon name="image"></ion-icon>
+                            <input type="file" name="imagem" accept="image/*" capture="camera" class="img-rosto-crianca">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="salvar2">
+                <button class="btn-salvar-aluno">Salvar</button>
+            </div>
     </div>
 
     <script src="../script.js"></script>

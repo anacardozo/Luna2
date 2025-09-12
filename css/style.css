@@ -863,7 +863,7 @@ hr{
     align-items: flex-start;
     flex-direction: column;
     width: 50%;
-    margin-top: 3%;
+    margin-top: 5%;
     background-color: transparent;
     margin-left: auto;
     padding: 0;
@@ -1075,8 +1075,8 @@ input[type="file"]::-webkit-file-upload-button{
     gap: 20px;
 }
 
-.grupo-esquerdo, 
-.grupo-direita{
+.grupo-esquerdo2, 
+.grupo-direita2{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1224,4 +1224,241 @@ input[type="file"]::-webkit-file-upload-button{
 .box3 p{
     font-family: 'Inter', sans-serif;
     font-weight: 300;
+}
+
+/*TELA CADASTRO ALUNOS*/
+.alunos{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 5%;
+    background-color: transparent;
+    margin-left: auto;
+    padding: 0;
+}
+
+.alunos h1{
+    padding: 30px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--background-color);
+    width: 100%;
+    text-align: center;
+}
+
+.cadastro-alunos{
+    all: unset;
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    /* min-height: 100%; */
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.grupo-esquerdo3, 
+.grupo-direita3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    height: 70%;
+    background-color: transparent;
+}
+
+.grupo-esquerdo3, 
+.grupo-direita3 p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--background-color);
+    width: 100%;
+    text-align: center;
+}
+
+.box4{
+    display: flex;
+    width: 300px;
+    color: var(--background-color);
+}
+
+.box4 input{
+    border-color: var(--background-color);
+    color: var(--text-color-tertiary);
+}
+
+.box4 input::placeholder{
+    color: var(--background-color);
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.box4 label{
+    margin-bottom: 60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.box4 ion-icon{
+    font-size: 20px;
+}
+
+.btns-imagem2{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+.btn-camera3{
+    display: flex;
+    text-align: left;
+    width: 150px;
+    height: 60px;
+    margin-left: 14%;
+    cursor: pointer;
+}
+
+.btn-camera3 input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    height: 50px;
+    width: 130px;
+    border-radius: 5px;
+}
+
+.btn-camera3 ion-icon{
+    margin-left: 33%;
+    color: var(--text-color-secondary);
+    font-size: 30px;
+    z-index: 9;
+}
+
+input[type="file"]::-webkit-file-upload-button{
+    background-color: var(--background-color);
+    align-items: center;
+    border: none;
+    color: var(--text-color-primary);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    width: 150px;
+    height: 500px;
+}
+
+.btn-camera4{
+    display: flex;
+    text-align: left;
+    width: 150px;
+    height: 60px;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+.btn-camera4 input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    height: 50px;
+    width: 130px;
+    border-radius: 5px;
+}
+
+.btn-camera4 ion-icon{
+    margin-left: 33%;
+    color: var(--text-color-secondary);
+    font-size: 30px;
+    z-index: 9;
+}
+
+.btn-camera5{
+    display: flex;
+    text-align: left;
+    width: 150px;
+    height: 60px;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.btn-camera5 input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    height: 50px;
+    width: 130px;
+    border-radius: 5px;
+}
+
+.btn-camera5 ion-icon{
+    margin-left: 33%;
+    color: var(--text-color-secondary);
+    font-size: 30px;
+    z-index: 9;
+}
+
+.btn-camera6{
+    display: flex;
+    text-align: left;
+    width: 150px;
+    height: 60px;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+.btn-camera6 input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    height: 50px;
+    width: 130px;
+    border-radius: 5px;
+}
+
+.btn-camera6 ion-icon{
+    margin-left: 33%;
+    color: var(--text-color-secondary);
+    font-size: 30px;
+    z-index: 9;
+}
+
+.salvar2{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-salvar-aluno{
+    padding: 10px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    color: var(--text-color-secondary);
+    width: 25%;
+    height: 50px;
+    margin-top: 60px;
+    text-align: center;
+    cursor: pointer;
 }
