@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
     list-style: none;
 }
 
-:root{
+:root {
     --background-color: #005A63;
     --background-color-secondary: #FDFDF8;
     --text-color-primary: #fff;
@@ -18,7 +18,7 @@
     --button-hover-color: rgba(0, 90, 99, 0.39);
 }
 
-body{
+body {
     background-color: var(--background-color);
     height: 100vh;
     overflow: hidden;
@@ -27,25 +27,26 @@ body{
     align-items: top;
 }
 
-header{
+header {
     position: fixed;
     width: 100vw;
     top: 0;
     padding: 20px 50px;
     display: flex;
-    justify-content: space-between; /*fica um em cada canto*/
+    justify-content: space-between;
+    /*fica um em cada canto*/
     align-items: center;
     z-index: 6;
 }
 
-header nav ul li{
+header nav ul li {
     font-family: "MuseoModerno", sans-serif;
     color: var(--background-color);
     font-weight: 100;
     font-size: 30px;
 }
 
-.img-bg{
+.img-bg {
     width: 50%;
     height: 100vh;
     z-index: 5;
@@ -53,7 +54,8 @@ header nav ul li{
     left: 0;
     top: 0;
 }
-form{
+
+form {
     width: 400px;
     display: flex;
     justify-content: flex-start;
@@ -66,53 +68,53 @@ form{
     color: var(--text-color-secondary);
 }
 
-form h1{
+form h1 {
     font-size: 60px;
     letter-spacing: 7px;
     font-weight: 700;
     color: var(--text-color-primary);
-    
+
 }
 
-form div{
+form div {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-div input{
+div input {
     width: 100%;
     max-width: 400px;
     height: 30px;
-    border:none;
-    background: none; 
+    border: none;
+    background: none;
     border-bottom: 1px solid var(--text-color-secondary);
     outline: none;
-    color:var(--text-color-primary);
+    color: var(--text-color-primary);
     cursor: pointer;
     position: absolute;
 }
 
-div input::placeholder{
+div input::placeholder {
     color: var(--text-color-primary);
     font-weight: 300;
     font-size: 18px;
 }
 
-div .icone{
+div .icone {
     position: absolute;
-    right: 0;    
+    right: 0;
 }
 
-.box-btn{
+.box-btn {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none ;
+    text-decoration: none;
 }
 
-.btn-login{
+.btn-login {
     display: flex;
     width: 140px;
     height: 45px;
@@ -133,248 +135,248 @@ div .icone{
 
 /* Responsividade tela de Login */
 
-@media (max-width: 1024px){
-    .img-bg{
-    width: 50%;
-    height: 100vh;
-    z-index: 5;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
+@media (max-width: 1024px) {
+    .img-bg {
+        width: 50%;
+        height: 100vh;
+        z-index: 5;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 
-form{
-    width: 400px;
-    margin-left: 70%;
-    font-size: 20px;
-}
+    form {
+        width: 400px;
+        margin-left: 70%;
+        font-size: 20px;
+    }
 
-form h1{
-    font-size: 40px;
-}
+    form h1 {
+        font-size: 40px;
+    }
 
-div input{
-    width: 300px;
-    height: 30px;
-}
+    div input {
+        width: 300px;
+        height: 30px;
+    }
 
-div input::placeholder{
-    color: var(--text-color-primary);
-    font-weight: 300;
-    font-size: 16px;
-}
+    div input::placeholder {
+        color: var(--text-color-primary);
+        font-weight: 300;
+        font-size: 16px;
+    }
 
-div .icone{
-    right: 25%;    
-}
+    div .icone {
+        right: 25%;
+    }
 
-.box-btn{
-    margin-right: 25%;
-}
+    .box-btn {
+        margin-right: 25%;
+    }
 
-.btn-login{
-    width: 120px;
-    height: 40px;
-    font-size: 20px;
-    
-}
+    .btn-login {
+        width: 120px;
+        height: 40px;
+        font-size: 20px;
 
-}
-
-@media (max-width: 768px){
-
-form {
-  width: 400px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  font-size: 30px;
-  margin-top: 40%;
-}
-
-
-.img-bg{
-    opacity: 0;
-}
-
-header nav ul li{
-    color: var(--text-color-primary );
-}
-
-
-form h1{
-    display: flex;
-    margin-left: 25%;
-    font-size: 60px;
-    align-items: center;
-}
-
-div input{
-    width: 300px;
-    height: 30px;
-}
-
-div input::placeholder{
-    color: var(--text-color-primary);
-    font-weight: 300;
-    font-size: 20px;
-}
-
-div .icone{
-    right: 25%;    
-}
-
-.box-btn{
-    margin: auto;
-}
-
-.btn-login{
-    width: 140px;
-    height: 45px;
-    font-size: 25px;
-    
-}
+    }
 
 }
 
-@media (max-width: 480px){
+@media (max-width: 768px) {
 
-svg path{
-    opacity: 0;
-}
-
-
-form {
-  width: 400px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  margin-left: 20%;
-  margin-top: 40%;
-  
-}
-
-header{
-    justify-content: center;
-    align-items: center;
-    margin-left: 22%;
-}
-
-.img-bg{
-    opacity: 0;
-}
-
-header nav ul li{
-    color: var(--text-color-primary );
-    margin: auto;
-}
-
-form h1{
-    display: flex;
-    margin-left: 20%;
-    font-size: 40px;
-    align-items: center;
-}
-
-div input{
-    max-width: 300px;
-    height: 30px;
-}
-
-div input::placeholder{
-    color: var(--text-color-primary);
-    font-weight: 300;
-    font-size: 16px;
-}
-
-div .icone{
-    left: 70%;    
-}
-
-.box-btn{
-    margin-right: 45%;
-}
-
-.btn-login{
-    width: 120px;
-    height: 40px;
-    font-size: 20px;
-    
-}
-}
-
-@media (max-width: 360px){
-body{
-    overflow: hidden;
-}
-
-header{
-    justify-content: center;
-    align-items: center;
-    margin-left: 42%;
-}
-
-form {
-  width: 400px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  margin-left: 32%;
-  margin-top: 40%;
-}
+    form {
+        width: 400px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        margin-top: 40%;
+    }
 
 
-.img-bg{
-    opacity: 0;
+    .img-bg {
+        opacity: 0;
+    }
+
+    header nav ul li {
+        color: var(--text-color-primary);
+    }
+
+
+    form h1 {
+        display: flex;
+        margin-left: 25%;
+        font-size: 60px;
+        align-items: center;
+    }
+
+    div input {
+        width: 300px;
+        height: 30px;
+    }
+
+    div input::placeholder {
+        color: var(--text-color-primary);
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+    div .icone {
+        right: 25%;
+    }
+
+    .box-btn {
+        margin: auto;
+    }
+
+    .btn-login {
+        width: 140px;
+        height: 45px;
+        font-size: 25px;
+
+    }
+
 }
 
-header nav ul li{
-    color: var(--text-color-primary );
+@media (max-width: 480px) {
+
+    svg path {
+        opacity: 0;
+    }
+
+
+    form {
+        width: 400px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        margin-left: 20%;
+        margin-top: 40%;
+
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+        margin-left: 22%;
+    }
+
+    .img-bg {
+        opacity: 0;
+    }
+
+    header nav ul li {
+        color: var(--text-color-primary);
+        margin: auto;
+    }
+
+    form h1 {
+        display: flex;
+        margin-left: 20%;
+        font-size: 40px;
+        align-items: center;
+    }
+
+    div input {
+        max-width: 300px;
+        height: 30px;
+    }
+
+    div input::placeholder {
+        color: var(--text-color-primary);
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    div .icone {
+        left: 70%;
+    }
+
+    .box-btn {
+        margin-right: 45%;
+    }
+
+    .btn-login {
+        width: 120px;
+        height: 40px;
+        font-size: 20px;
+
+    }
 }
 
-form h1{
-    display: flex;
-    margin-left: 20%;
-    font-size: 40px;
-    align-items: center;
+@media (max-width: 360px) {
+    body {
+        overflow: hidden;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+        margin-left: 42%;
+    }
+
+    form {
+        width: 400px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        margin-left: 32%;
+        margin-top: 40%;
+    }
+
+
+    .img-bg {
+        opacity: 0;
+    }
+
+    header nav ul li {
+        color: var(--text-color-primary);
+    }
+
+    form h1 {
+        display: flex;
+        margin-left: 20%;
+        font-size: 40px;
+        align-items: center;
+    }
+
+    div input {
+        max-width: 300px;
+        height: 30px;
+    }
+
+    div input::placeholder {
+        color: var(--text-color-primary);
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    div .icone {
+        left: 70%;
+    }
+
+    .box-btn {
+        margin-left: 25%;
+    }
+
+    .btn-login {
+        width: 120px;
+        height: 40px;
+        font-size: 20px;
+
+    }
 }
 
-div input{
-    max-width: 300px;
-    height: 30px;
-}
+@media (max-width: 1366px) {}
 
-div input::placeholder{
-    color: var(--text-color-primary);
-    font-weight: 300;
-    font-size: 16px;
-}
-
-div .icone{
-    left: 70%;    
-}
-
-.box-btn{
-    margin-left:25%;
-}
-
-.btn-login{
-    width: 120px;
-    height: 40px;
-    font-size: 20px;
-    
-}
-}
-@media (max-width: 1366px){
-
-}
 /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 /* TELA DE CADASTRO */
-.principal{
+.principal {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     width: 50vw;
@@ -385,7 +387,7 @@ div .icone{
     padding: 0;
 }
 
-.principal h1{
+.principal h1 {
     width: 100%;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -396,7 +398,7 @@ div .icone{
 
 }
 
-.form-cadastro{
+.form-cadastro {
     all: unset;
     display: flex;
     background-color: transparent;
@@ -410,8 +412,8 @@ div .icone{
     text-align: start;
 }
 
-.grupo-esquerdo1, 
-.grupo-direita1{
+.grupo-esquerdo1,
+.grupo-direita1 {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -422,7 +424,7 @@ div .icone{
     padding: 0;
 }
 
-.box{
+.box {
     margin: 0;
     padding: 0;
     display: flex;
@@ -431,14 +433,14 @@ div .icone{
     gap: 50px;
 }
 
-.box input{
+.box input {
     margin: 0;
     padding: 0;
     border-color: var(--text-color-secondary);
     color: var(--text-color-primary);
 }
 
-.box input::placeholder{
+.box input::placeholder {
     margin: 0;
     padding: 0;
     color: var(--text-color-secondary);
@@ -447,7 +449,7 @@ div .icone{
     font-weight: 300;
 }
 
-.box label{
+.box label {
     margin: 0;
     padding: 0;
     margin-bottom: 60px;
@@ -457,12 +459,12 @@ div .icone{
     color: var(--text-color-primary);
 }
 
-.box ion-icon{
+.box ion-icon {
     font-size: 16px;
     color: var(--text-color-secondary);
 }
 
-.box-cadastrar{
+.box-cadastrar {
     display: flex;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -473,7 +475,7 @@ div .icone{
     margin-top: 50px;
 }
 
-.btn-cadastrar{
+.btn-cadastrar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -493,7 +495,7 @@ div .icone{
 
 /* ----------------------- HOME ------------------------------------------ */
 
-.menu-lateral{
+.menu-lateral {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -510,23 +512,23 @@ div .icone{
     transition: all 0.5s ease-in-out;
 }
 
-.menu-lateral.active{
+.menu-lateral.active {
     z-index: 10;
 }
 
-.menu-lateral ion-icon{
+.menu-lateral ion-icon {
     color: var(--text-color-primary);
     font-size: 40px;
-    font-weight: 0; 
+    font-weight: 0;
 }
 
-.menu-lateral ul{
+.menu-lateral ul {
     list-style-type: none;
     padding: 0;
     margin-top: 100px;
 }
 
-.menu-lateral ul li{
+.menu-lateral ul li {
     padding: 30px 30px;
     width: 300px;
     transition: all 0.5s;
@@ -540,7 +542,7 @@ div .icone{
 }
 
 
-.menu-lateral ul li a{
+.menu-lateral ul li a {
     text-decoration: none;
     color: var(--background-color);
     font-size: 18px;
@@ -548,14 +550,14 @@ div .icone{
     align-items: center;
     gap: 20px;
     transition: all 0.5s ease-in-out;
-    
+
 }
 
-.menu-lateral.active ul li a{
+.menu-lateral.active ul li a {
     color: var(--text-color-primary);
 }
 
-.botao-menu{
+.botao-menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -564,7 +566,7 @@ div .icone{
     height: 50px;
     font-size: 70px;
     font-weight: 700;
-    top:10px;
+    top: 10px;
     left: 30px;
     background: transparent;
     border: none;
@@ -574,7 +576,7 @@ div .icone{
     z-index: 5;
 }
 
-.content{
+.content {
     position: absolute;
     display: flex;
     right: 0;
@@ -587,14 +589,14 @@ div .icone{
     transition: all 0.5s ease-in-out;
 }
 
-.content.active{
+.content.active {
     width: 83vw;
 }
 
-.nav-pesquisa{
+.nav-pesquisa {
     position: fixed;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 30px 10px 30px 50px;
     top: 0;
     width: 90%;
@@ -602,29 +604,30 @@ div .icone{
     transition: all 0.5s ease-in-out;
 }
 
-.nav-pesquisa.active{
+.nav-pesquisa.active {
     width: 80%;
 }
 
 .grupo-pesquisa {
-  display: flex;
-  align-items: center;
-  gap: 20px; /* diminui a distância entre eles */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* diminui a distância entre eles */
 }
 
-.inputs-pesquisa{
+.inputs-pesquisa {
     all: unset;
     position: relative;
     display: flex;
     align-items: center;
     gap: 8px;
     width: 300px;
-    color:var(--text-color-tertiary);
+    color: var(--text-color-tertiary);
     font-family: 'Inter', sans-serif;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
 }
 
-.inputs-pesquisa ion-icon{
+.inputs-pesquisa ion-icon {
     color: var(--background-color);
     align-items: center;
     font-size: 20px;
@@ -632,7 +635,7 @@ div .icone{
     padding: 0 20px;
 }
 
-.inputs-pesquisa input{
+.inputs-pesquisa input {
     color: var(--text-color-tertiary);
     border: none;
     background-color: var(--text-color-primary);
@@ -640,17 +643,17 @@ div .icone{
     width: 300px;
     padding: 0 50px;
     height: 35px;
-    
+
 }
 
-.inputs-pesquisa input::placeholder{
+.inputs-pesquisa input::placeholder {
     font-size: 16px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     color: var(--text-color-tertiary);
 }
 
-.filtro{
+.filtro {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -671,41 +674,41 @@ div .icone{
     transition: all 0.6s ease-in-out;
 }
 
-.filtro ion-icon{
+.filtro ion-icon {
     font-size: 20px;
 }
 
-.filtro:hover{
+.filtro:hover {
     background-color: var(--button-hover-color);
     color: var(--text-color-tertiary);
 }
 
-.grupo-itens-escola{
+.grupo-itens-escola {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:transparent;
+    background-color: transparent;
     width: 300px;
     height: 40px;
     color: var(--background-color);
     gap: 20px;
 }
 
-.grupo-itens-escola p{
+.grupo-itens-escola p {
     color: var(--text-color-tertiary);
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 18px;
 }
 
-.icones{
+.icones {
     display: flex;
     font-size: 30px;
     gap: 10px;
     cursor: pointer;
 }
 
-.img-escola{
+.img-escola {
     display: flex;
     height: 50px;
     width: 50px;
@@ -713,18 +716,98 @@ div .icone{
     overflow: hidden;
 }
 
-.img-escola img{
+.img-escola img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
 }
 
-
 /* TELA CADASTRO PROFESSORES */
-.professores{
+
+/*LISTA PROFESSORES*/
+.lista{
     display: flex;
-    justify-content:flex-start;
+    align-items: center;
+    /* justify-content: flex-start; */
+    flex-direction: column;
+    width: 500px;
+    height: 80vh;
+    margin-top: 8%;
+    margin-left: 50px;
+    border-radius: 15px;
+    background-color: var(--background-color);
+}
+
+.lista img{
+    top: 0;
+    width: 80%;
+}
+
+.list-pro{
+    width: 90%;
+    list-style: none;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.list-pro::-webkit-scrollbar{
+    display: none;
+}
+
+.dados-pro{
+    background-color: var(--text-color-primary);
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.dados1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.img-prof{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-prof img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dados2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+}
+.dados2 ion-icon{
+    font-size: 20px;
+    color: var(--background-color);
+}
+
+/* CADASTRO PROFESSORES */
+.professores {
+    display: flex;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     width: 50%;
@@ -734,7 +817,7 @@ div .icone{
     padding: 0;
 }
 
-.professores h1{
+.professores h1 {
     padding: 30px 0;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -744,7 +827,7 @@ div .icone{
     text-align: center;
 }
 
-.cadastro-professores{
+.cadastro-professores {
     all: unset;
     display: flex;
     background-color: transparent;
@@ -755,8 +838,8 @@ div .icone{
     gap: 20px;
 }
 
-.grupo-esquerdo, 
-.grupo-direita{
+.grupo-esquerdo,
+.grupo-direita {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -765,36 +848,36 @@ div .icone{
     background-color: transparent;
 }
 
-.box2{
+.box2 {
     display: flex;
     width: 300px;
     color: var(--background-color);
 }
 
-.box2 input{
+.box2 input {
     border-color: var(--background-color);
     color: var(--text-color-tertiary);
 }
 
-.box2 input::placeholder{
+.box2 input::placeholder {
     color: var(--background-color);
     font-size: 16px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
 }
 
-.box2 label{
+.box2 label {
     margin-bottom: 60px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 20px;
 }
 
-.box2 ion-icon{
+.box2 ion-icon {
     font-size: 20px;
 }
 
-.professores p{
+.professores p {
     margin-bottom: 5px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -809,13 +892,13 @@ div .icone{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 70px; 
+    height: 70px;
 }
 
 .btn-camera {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     width: 100px;
     height: 40px;
     cursor: pointer;
@@ -829,17 +912,19 @@ div .icone{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
 }
+
 .btn-camera:hover {
     background-color: var(--button-hover-color);
     color: var(--text-color-tertiary);
 }
+
 .btn-camera ion-icon {
     font-size: 30px;
     color: inherit;
 }
 
 
-.salvar{
+.salvar {
     display: flex;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -850,7 +935,7 @@ div .icone{
     align-items: center;
 }
 
-.btn-salvar-pro{
+.btn-salvar-pro {
     padding: 10px 0;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -866,9 +951,9 @@ div .icone{
 }
 
 /* Tela Editar Dados */
-.alterar-dados-escola{
+.alterar-dados-escola {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     width: 50%;
@@ -878,7 +963,7 @@ div .icone{
     padding: 0;
 }
 
-.alterar-dados-escola h1{
+.alterar-dados-escola h1 {
     padding: 40px 0;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -888,7 +973,7 @@ div .icone{
     text-align: center;
 }
 
-.alterar-escola{
+.alterar-escola {
     all: unset;
     display: flex;
     background-color: transparent;
@@ -899,8 +984,8 @@ div .icone{
     gap: 20px;
 }
 
-.grupo-esquerdo2, 
-.grupo-direita2{
+.grupo-esquerdo2,
+.grupo-direita2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -909,37 +994,37 @@ div .icone{
     background-color: transparent;
 }
 
-.box2{
+.box2 {
     display: flex;
     width: 300px;
     color: var(--background-color);
 }
 
-.box2 input{
+.box2 input {
     border-color: var(--background-color);
     color: var(--text-color-tertiary);
 }
 
-.box2 input::placeholder{
+.box2 input::placeholder {
     color: var(--background-color);
     font-size: 16px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
 }
 
-.box2 label{
+.box2 label {
     margin-bottom: 60px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 20px;
 }
 
-.box2 ion-icon{
+.box2 ion-icon {
     font-size: 20px;
 }
 
 
-.alterar{
+.alterar {
     display: flex;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -949,7 +1034,7 @@ div .icone{
     align-items: center;
 }
 
-.btn-alterar-pro{
+.btn-alterar-pro {
     padding: 10px 0;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -967,7 +1052,7 @@ div .icone{
 
 /* Mostrando Dados */
 
-.dados{
+.dados {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -981,17 +1066,17 @@ div .icone{
     margin-left: auto;
 }
 
-.svg-dados{
+.svg-dados {
     display: flex;
     justify-content: flex-end;
     margin-right: 100px;
     align-items: center;
     margin-top: 50px;
     width: 100%;
-    
+
 }
 
-.img-escola-dados{
+.img-escola-dados {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1003,14 +1088,14 @@ div .icone{
     overflow: hidden;
 }
 
-.img-escola-dados img{
+.img-escola-dados img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.apresentacao-dados{
+.apresentacao-dados {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -1024,7 +1109,7 @@ div .icone{
     gap: 20px;
 }
 
-.dados-escola{
+.dados-escola {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -1033,28 +1118,28 @@ div .icone{
     gap: 20px;
 }
 
-.box3{
+.box3 {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.box3 label{
+.box3 label {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     color: var(--background-color);
 }
 
-.box3 p{
+.box3 p {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
 }
 
 /*TELA CADASTRO ALUNOS*/
 
-.alunos{
+.alunos {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     width: 50%;
@@ -1064,7 +1149,7 @@ div .icone{
     padding: 0;
 }
 
-.alunos h1{
+.alunos h1 {
     padding: 30px 0;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -1074,7 +1159,7 @@ div .icone{
     text-align: center;
 }
 
-.cadastro-alunos{
+.cadastro-alunos {
     all: unset;
     display: flex;
     background-color: transparent;
@@ -1085,8 +1170,8 @@ div .icone{
     gap: 20px;
 }
 
-.grupo-esquerdo3, 
-.grupo-direita3{
+.grupo-esquerdo3,
+.grupo-direita3 {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1095,36 +1180,36 @@ div .icone{
     background-color: transparent;
 }
 
-.box4{
+.box4 {
     display: flex;
     width: 300px;
     color: var(--background-color);
 }
 
-.box4 input{
+.box4 input {
     border-color: var(--background-color);
     color: var(--text-color-tertiary);
 }
 
-.box4 input::placeholder{
+.box4 input::placeholder {
     color: var(--background-color);
     font-size: 16px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
 }
 
-.box4 label{
+.box4 label {
     margin-bottom: 60px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 20px;
 }
 
-.box4 ion-icon{
+.box4 ion-icon {
     font-size: 20px;
 }
 
-.alunos p{
+.alunos p {
     margin-bottom: 10px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -1134,7 +1219,7 @@ div .icone{
     text-align: center;
 }
 
-.salvar2{
+.salvar2 {
     display: flex;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -1145,7 +1230,7 @@ div .icone{
     align-items: center;
 }
 
-.btn-salvar-aluno{
+.btn-salvar-aluno {
     padding: 10px 0;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
