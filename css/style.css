@@ -130,50 +130,6 @@ div .icone{
     cursor: pointer;
 }
 
-.txt-1{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.txt-1 p{
-    color: var(--text-color-primary);
-    font-weight: 300;
-    font-size: 19px;
-
-}
-
-.txt-1 p a{
-    text-decoration: none;
-    color: var(--text-color-secondary);
-}
-
-.redes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-}
-
-.redes a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-    border-radius: 50%;
-    transition: all 0.2s ;
-}
-
-.redes ion-icon {
-    font-size: 48px;
-    color: var(--text-color-secondary);
-}
-
-.redes a:hover{
-    background-color: var(--highlight-color);
-    border-radius: 50%;
-}
 
 /* Responsividade tela de Login */
 
@@ -223,26 +179,6 @@ div .icone{
     
 }
 
-.txt-1{
-    margin-right: 25%;
-}
-
-.txt-1 p{
-    font-size: 16px;
-
-}
-
-hr{
-    width: 300px;
-}
-
-.redes{
-    margin-right: 25%;
-}
-
-.redes ion-icon {
-    font-size: 38px;
-}
 }
 
 @media (max-width: 768px){
@@ -297,32 +233,6 @@ div .icone{
     height: 45px;
     font-size: 25px;
     
-}
-
-.txt-1{
-    margin: auto;
-}
-
-.txt-1 p{
-    font-size: 20px;
-
-}
-
-hr{
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.redes{
-    margin-top: -10%;
-    margin: auto;
-}
-
-.redes ion-icon {
-    font-size: 38px;
 }
 
 }
@@ -392,29 +302,6 @@ div .icone{
     font-size: 20px;
     
 }
-
-.txt-1{
-    margin-right: 35%;
-}
-
-.txt-1 p{
-    font-size: 16px;
-
-}
-
-hr{
-    width: 300px;
-    margin-right: 35%;
-}
-
-.redes{
-    margin-right: 35%;
-    margin-top: -10%;
-}
-
-.redes ion-icon {
-    font-size: 38px;
-}
 }
 
 @media (max-width: 360px){
@@ -478,29 +365,6 @@ div .icone{
     height: 40px;
     font-size: 20px;
     
-}
-
-.txt-1{
-    margin-right: 35%;
-}
-
-.txt-1 p{
-    font-size: 16px;
-
-}
-
-hr{
-    width: 300px;
-    margin-right: 35%;
-}
-
-.redes{
-    margin-right: 35%;
-    margin-top: -10%;
-}
-
-.redes ion-icon {
-    font-size: 38px;
 }
 }
 @media (max-width: 1366px){
@@ -718,6 +582,7 @@ hr{
     width: 92vw;
     background-color: var(--background-color-secondary);
     border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     z-index: 6;
     transition: all 0.5s ease-in-out;
 }
@@ -930,7 +795,7 @@ hr{
 }
 
 .professores p{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -939,81 +804,40 @@ hr{
     text-align: center;
 }
 
-.btns-imagem{
+.btn-imagem {
     display: flex;
+    justify-content: center;
     align-items: center;
-    /* justify-content: center; */
-    text-align: center;
     width: 100%;
-    height: 50px;
+    height: 70px; 
 }
 
-.btn-camera{
-    display: flex;
-    text-align: left;
-    width: 150px;
-    height: 60px;
-    margin-left: 30%;
-    cursor: pointer;
-}
-
-.btn-camera input{
+.btn-camera {
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: none;
-    height: 50px;
-    width: 130px;
-    border-radius: 5px;
-}
-
-.btn-camera ion-icon{
-    margin-left: 33%;
-    margin-top: 10px;
-    color: var(--text-color-secondary);
-    font-size: 30px;
-    z-index: 9;
-}
-
-input[type="file"]::-webkit-file-upload-button{
+    justify-content: center; 
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    gap: 10px;
     background-color: var(--background-color);
-    align-items: center;
-    border: none;
-    color: var(--text-color-primary);
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    width: 150px;
-    height: 500px;
-}
-
-.btn-camera2{
-    display: flex;
-    text-align: left;
-    width: 150px;
-    height: 60px;
-    margin-left: 1%;
-    cursor: pointer;
-}
-
-.btn-camera2 input{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: none;
-    height: 50px;
-    width: 130px;
-    border-radius: 5px;
-}
-
-.btn-camera2 ion-icon{
-    margin-left: 33%;
-    margin-top: 10px;
     color: var(--text-color-secondary);
-    font-size: 30px;
-    z-index: 9;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
+.btn-camera:hover {
+    background-color: var(--button-hover-color);
+    color: var(--text-color-tertiary);
+}
+.btn-camera ion-icon {
+    font-size: 30px;
+    color: inherit;
+}
+
 
 .salvar{
     display: flex;
@@ -1021,6 +845,7 @@ input[type="file"]::-webkit-file-upload-button{
     font-weight: 700;
     font-size: 22px;
     width: 100%;
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
@@ -1036,9 +861,8 @@ input[type="file"]::-webkit-file-upload-button{
     color: var(--text-color-secondary);
     width: 25%;
     height: 50px;
-    margin-top: 10px;
-    text-align: center;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 /* Tela Editar Dados */
@@ -1227,6 +1051,7 @@ input[type="file"]::-webkit-file-upload-button{
 }
 
 /*TELA CADASTRO ALUNOS*/
+
 .alunos{
     display: flex;
     justify-content:flex-start;
@@ -1270,16 +1095,6 @@ input[type="file"]::-webkit-file-upload-button{
     background-color: transparent;
 }
 
-.grupo-esquerdo3, 
-.grupo-direita3 p{
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--background-color);
-    width: 100%;
-    text-align: center;
-}
-
 .box4{
     display: flex;
     width: 300px;
@@ -1309,132 +1124,14 @@ input[type="file"]::-webkit-file-upload-button{
     font-size: 20px;
 }
 
-.btns-imagem2{
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    text-align: center;
-    width: 100%;
-    height: 50px;
-}
-
-.btn-camera3{
-    display: flex;
-    text-align: left;
-    width: 150px;
-    height: 60px;
-    margin-left: 14%;
-    cursor: pointer;
-}
-
-.btn-camera3 input{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: none;
-    height: 50px;
-    width: 130px;
-    border-radius: 5px;
-}
-
-.btn-camera3 ion-icon{
-    margin-left: 33%;
-    color: var(--text-color-secondary);
-    font-size: 30px;
-    z-index: 9;
-}
-
-input[type="file"]::-webkit-file-upload-button{
-    background-color: var(--background-color);
-    align-items: center;
-    border: none;
-    color: var(--text-color-primary);
+.alunos p{
+    margin-bottom: 10px;
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    width: 150px;
-    height: 500px;
-}
-
-.btn-camera4{
-    display: flex;
-    text-align: left;
-    width: 150px;
-    height: 60px;
-    margin-left: 1%;
-    cursor: pointer;
-}
-
-.btn-camera4 input{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--background-color);
+    width: 100%;
     text-align: center;
-    border: none;
-    height: 50px;
-    width: 130px;
-    border-radius: 5px;
-}
-
-.btn-camera4 ion-icon{
-    margin-left: 33%;
-    color: var(--text-color-secondary);
-    font-size: 30px;
-    z-index: 9;
-}
-
-.btn-camera5{
-    display: flex;
-    text-align: left;
-    width: 150px;
-    height: 60px;
-    margin-left: 4%;
-    cursor: pointer;
-}
-
-.btn-camera5 input{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: none;
-    height: 50px;
-    width: 130px;
-    border-radius: 5px;
-}
-
-.btn-camera5 ion-icon{
-    margin-left: 33%;
-    color: var(--text-color-secondary);
-    font-size: 30px;
-    z-index: 9;
-}
-
-.btn-camera6{
-    display: flex;
-    text-align: left;
-    width: 150px;
-    height: 60px;
-    margin-left: 1%;
-    cursor: pointer;
-}
-
-.btn-camera6 input{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: none;
-    height: 50px;
-    width: 130px;
-    border-radius: 5px;
-}
-
-.btn-camera6 ion-icon{
-    margin-left: 33%;
-    color: var(--text-color-secondary);
-    font-size: 30px;
-    z-index: 9;
 }
 
 .salvar2{
@@ -1443,6 +1140,7 @@ input[type="file"]::-webkit-file-upload-button{
     font-weight: 700;
     font-size: 22px;
     width: 100%;
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
@@ -1458,7 +1156,6 @@ input[type="file"]::-webkit-file-upload-button{
     color: var(--text-color-secondary);
     width: 25%;
     height: 50px;
-    margin-top: 60px;
-    text-align: center;
     cursor: pointer;
+    box-sizing: border-box;
 }
