@@ -1137,6 +1137,86 @@ div .icone {
 
 /*TELA CADASTRO ALUNOS*/
 
+/*LIsta Alunos*/
+.lista2{
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    flex-direction: column;
+    width: 500px;
+    height: 80vh;
+    margin-top: 8%;
+    margin-left: 50px;
+    border-radius: 15px;
+    background-color: var(--background-color);
+}
+
+.lista2 img{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.list-aluno{
+    width: 90%;
+    list-style: none;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.list-aluno::-webkit-scrollbar{
+    display: none;
+}
+
+.dados-aluno{
+    background-color: var(--text-color-primary);
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.dados3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.img-aluno{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-aluno img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dados4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+}
+.dados4 ion-icon{
+    font-size: 20px;
+    color: var(--background-color);
+}
+
+/*Cadastro alunos*/
 .alunos {
     display: flex;
     justify-content: flex-start;
@@ -1243,4 +1323,92 @@ div .icone {
     height: 50px;
     cursor: pointer;
     box-sizing: border-box;
+}
+
+/*Tela Turmas*/
+
+/*Lista Turmas*/
+.lista-turma{
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
+    flex-direction: column;
+    width: 500px;
+    height: 80vh;
+    margin-top: 8%;
+    margin-left: 50px;
+    border-radius: 15px;
+    background-color: var(--text-color-primary);
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+.lista-turma h2{
+    margin: 30px;
+}
+
+.salas{
+    display: flex;
+    background-color: transparent;
+    /* height: 200px; */
+    width: 100%;
+    margin-left: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 10px;
+}
+
+.pasta-turma{
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    height: 130px;
+    width: 180px;
+    border-radius: 10px;
+    margin: 10px 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    transition: all 0.4s ease-in-out;
+}
+
+.pasta-turma p{
+    margin: 20px 10px;
+    color: var(--text-color-primary);
+    font-size: 18px;
+}
+
+.pasta-turma ion-icon{
+    margin: 5px;
+    color: var(--text-color-secondary);
+    font-size: 18px;
+}
+
+.pasta-turma:hover{
+    height: 150px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.profResponsavel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 90%;
+    height: 50px;
+    margin: 0px auto;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    color: var(--text-color-primary);
+    font-family: 'Inter', sans-serif;
+}
+
+.nomeProf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
