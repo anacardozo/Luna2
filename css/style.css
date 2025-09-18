@@ -802,6 +802,7 @@ div .icone {
 .dados2 ion-icon{
     font-size: 20px;
     color: var(--background-color);
+    cursor: pointer;
 }
 
 /* CADASTRO PROFESSORES */
@@ -1214,6 +1215,7 @@ div .icone {
 .dados4 ion-icon{
     font-size: 20px;
     color: var(--background-color);
+    cursor: pointer;
 }
 
 /*Cadastro alunos*/
@@ -1329,11 +1331,12 @@ div .icone {
 
 /*Lista Turmas*/
 .lista-turma{
+    position: relative;
     display: flex;
     align-items: flex-start;
     /* justify-content: flex-start; */
     flex-direction: column;
-    width: 500px;
+    width: 550px;
     height: 80vh;
     margin-top: 8%;
     margin-left: 50px;
@@ -1345,12 +1348,13 @@ div .icone {
     box-sizing: border-box;
 }
 
-.lista-turma h2{
-    margin: 30px;
+.lista-turma h3{
+    margin: 20px 30px;
 }
 
 .salas{
     display: flex;
+    flex: 0 0 auto;
     background-color: transparent;
     /* height: 200px; */
     width: 100%;
@@ -1368,7 +1372,7 @@ div .icone {
     height: 130px;
     width: 180px;
     border-radius: 10px;
-    margin: 10px 20px;
+    margin: 10px 30px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     transition: all 0.4s ease-in-out;
@@ -1396,10 +1400,10 @@ div .icone {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    width: 90%;
+    padding: 10px 10px;
+    width: 80%;
     height: 50px;
-    margin: 0px auto;
+    margin: 0px 20px;
     background-color: var(--background-color);
     border-radius: 5px;
     color: var(--text-color-primary);
@@ -1411,4 +1415,214 @@ div .icone {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+
+.lista-alunosTurma{
+    width: 80%;
+    margin: 20px 20px;
+    list-style: none;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.lista-alunosTurma::-webkit-scrollbar{
+    display: none;
+}
+
+.dados-alunoTurma{
+    background-color: var(--text-color-primary);
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.avatar{
+    position: absolute;
+    bottom: -15px; 
+    right: -60px;  
+    width: 150px;   
+    height: auto;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.turma{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 5%;
+    background-color: transparent;
+    margin-left: auto;
+    padding: 0;
+}
+
+.turma h1{
+    padding: 30px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--background-color);
+    width: 100%;
+    text-align: center;
+}
+
+.cadastro-turma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 50%;
+    /* min-height: 100%; */
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.box5 {
+    display: flex;
+    width: 300px;
+    color: var(--background-color);
+}
+
+.box5 input {
+    border-color: var(--background-color);
+    color: var(--text-color-tertiary);
+}
+
+.box5 input::placeholder {
+    color: rgba(2, 23, 48, 0.8);
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.box5 label {
+    margin-bottom: 80px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.box5 ion-icon {
+    font-size: 20px;
+}
+
+.adicionar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 450px;
+    height: 350px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+}
+
+.pesquisar{
+    position: relative;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 8px;
+    width: 300px;
+    height: 40px;
+    margin: 30px auto;
+    border-radius: 5px;
+    background-color: var(--text-color-primary);
+    
+}
+
+.pesquisar input{
+    border: none;
+    width: 200px;
+    height: 40px;
+    color: var(--text-color-tertiary);
+    margin-left: 50px;
+}
+
+.pesquisar input::placeholder{
+    color: var(--text-color-tertiary);
+    font-size: 14px;
+}
+
+.pesquisar ion-icon{
+    color: var(--background-color);
+    align-items: center;
+    font-size: 20px;
+    z-index: 9;
+    padding: 0 20px;
+}
+
+.lista-adicionar{
+    width: 90%;
+    margin: 10px 20px;
+    list-style: none;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.dados-alunosAdicionar{
+    background-color: var(--text-color-primary);
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    min-height: 50px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.dados5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+.checkbox {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 2px solid #ccc;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  user-select: none;
+}
+input[type="checkbox"]:checked + .checkbox {
+  border-color: var(--blur);
+  background-color: rgba(0, 90, 99,0.5);
+}
+
+.criar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--text-color-secondary);
+    color: var(--background-color);
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
 }

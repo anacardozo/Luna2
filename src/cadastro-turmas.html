@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&family=MuseoModerno:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&family=MuseoModerno:ital,wght@0,100;1,100&display=swap"
+        rel="stylesheet">
     <title>Home</title>
 </head>
+
 <body>
-        <button class="botao-menu">
-            <ion-icon name="menu-outline"></ion-icon>
-        </button>
+    <button class="botao-menu">
+        <ion-icon name="menu-outline"></ion-icon>
+    </button>
 
     <nav class="menu-lateral">
 
         <ul>
             <li>
                 <a href="home.html">
-                    <ion-icon name="home"></ion-icon> 
+                    <ion-icon name="home"></ion-icon>
                     Home
                 </a>
             </li>
             <li>
                 <a href="cadastro-professores.html">
                     <ion-icon name="person"></ion-icon>
-                     Professores
+                    Professores
                 </a>
             </li>
             <li>
                 <a href="cadastro-alunos.html">
-                    <ion-icon name="school"></ion-icon> 
+                    <ion-icon name="school"></ion-icon>
                     Alunos
                 </a>
             </li>
             <li>
                 <a href="cadastro-turmas.html">
-                    <ion-icon name="book"></ion-icon> 
+                    <ion-icon name="book"></ion-icon>
                     Turmas
                 </a>
             </li>
             <li>
                 <a href="editar.html">
-                    <ion-icon name="pencil"></ion-icon> 
+                    <ion-icon name="pencil"></ion-icon>
                     Editar Dados
                 </a>
             </li>
@@ -85,7 +91,7 @@
         <!-- Fim da Nav Pesquisa -->
 
         <div class="lista-turma">
-            <h2>TURMAS</h2>
+            <h3>TURMAS</h3>
 
             <div class="salas">
                 <div class="pasta-turma">
@@ -103,22 +109,169 @@
                 <div class="pasta-turma">
                     <p class="nome-turma">4°A</p>
                     <ion-icon name="trash"></ion-icon>
-                </div><div class="pasta-turma">
+                </div>
+                <div class="pasta-turma">
                     <p class="nome-turma">5°A</p>
                     <ion-icon name="trash"></ion-icon>
                 </div>
             </div>
 
-            <h2>ALUNOS</h2>
+            <h3>ALUNOS</h3>
             <!-- Nome Professor Responsável -->
             <label for="nome-profResponsavel" class="profResponsavel">
                 <div class="nomeProf">
                     <div class="img-prof"><img src="../assets/img-pro.jpeg" alt="" class="img-prof"></div>
-                    <p class="nome-prof">Prof.ª Helena Aguiar</p>
+                    <p class="nome-prof">Prof.ª Helena Agular</p>
                 </div>
                 <p class="nome-turma">1°A</p>
             </label>
 
+            <!-- Alunos da Turma -->
+            <ul class="lista-alunosTurma">
+                <li class="dados-alunoTurma">
+                    <div class="dados3">
+                        <div class="img-aluno">
+                            <img src="../assets/img-aluno.jpg" alt="" class="img-aluno">
+                        </div>
+                        <p class="nome-aluno">Isabelly Santos</p>
+                    </div>
+                    <div class="dados4">
+                        <p class="ra">RA: 847256731</p>
+                        <ion-icon name="trash"></ion-icon>
+                    </div>
+                </li>
+                <li class="dados-alunoTurma">
+                    <div class="dados3">
+                        <div class="img-aluno">
+                            <img src="../assets/img-aluno.jpg" alt="" class="img-aluno">
+                        </div>
+                        <p class="nome-aluno">Isabelly Santos</p>
+                    </div>
+                    <div class="dados4">
+                        <p class="ra">RA: 847256731</p>
+                        <ion-icon name="trash"></ion-icon>
+                    </div>
+                </li>
+                <li class="dados-alunoTurma">
+                    <div class="dados3">
+                        <div class="img-aluno">
+                            <img src="../assets/img-aluno.jpg" alt="" class="img-aluno">
+                        </div>
+                        <p class="nome-aluno">Isabelly Santos</p>
+                    </div>
+                    <div class="dados4">
+                        <p class="ra">RA: 847256731</p>
+                        <ion-icon name="trash"></ion-icon>
+                    </div>
+                </li>
+                <li class="dados-alunoTurma">
+                    <div class="dados3">
+                        <div class="img-aluno">
+                            <img src="../assets/img-aluno.jpg" alt="" class="img-aluno">
+                        </div>
+                        <p class="nome-aluno">Isabelly Santos</p>
+                    </div>
+                    <div class="dados4">
+                        <p class="ra">RA: 847256731</p>
+                        <ion-icon name="trash"></ion-icon>
+                    </div>
+                </li>
+                <li class="dados-alunoTurma">
+                    <div class="dados3">
+                        <div class="img-aluno">
+                            <img src="../assets/img-aluno.jpg" alt="" class="img-aluno">
+                        </div>
+                        <p class="nome-aluno">Isabelly Santos</p>
+                    </div>
+                    <div class="dados4">
+                        <p class="ra">RA: 847256731</p>
+                        <ion-icon name="trash"></ion-icon>
+                    </div>
+                </li>
+                <li class="dados-alunoTurma">
+                    <div class="dados3">
+                        <div class="img-aluno">
+                            <img src="../assets/img-aluno.jpg" alt="" class="img-aluno">
+                        </div>
+                        <p class="nome-aluno">Isabelly Santos</p>
+                    </div>
+                    <div class="dados4">
+                        <p class="ra">RA: 847256731</p>
+                        <ion-icon name="trash"></ion-icon>
+                    </div>
+                </li>
+                <li class="dados-alunoTurma">
+                    <div class="dados3">
+                        <div class="img-aluno">
+                            <img src="../assets/img-aluno.jpg" alt="" class="img-aluno">
+                        </div>
+                        <p class="nome-aluno">Isabelly Santos</p>
+                    </div>
+                    <div class="dados4">
+                        <p class="ra">RA: 847256731</p>
+                        <ion-icon name="trash"></ion-icon>
+                    </div>
+                </li>
+            </ul>
+
+            <img src="../assets/avatar.png" alt="" class="avatar">
+        </div>
+
+        <!-- CADASTRO TURMA -->
+        <div class="turma">
+            <h1>CRIAR TURMA</h1>
+
+            <form action="" class="cadastro-turma">
+                <div class="box5">
+                    <label for="turma">TURMA</label>
+                    <input type="text" placeholder="Digite o nome da turma" class="nomeTurma">
+                    <ion-icon name="create" class="icone"></ion-icon>
+                </div>
+                <div class="box5">
+                    <label for="emailProf">PROFESSOR</label>
+                    <input type="text" placeholder="Digite o e-mail do proefessor" class="emailProfessor">
+                    <ion-icon name="create" class="icone"></ion-icon>
+                </div>
+            </form>
+
+            <div class="adicionar">
+                <div class="pesquisar">
+                    <ion-icon name="search"></ion-icon>
+                    <input type="search" placeholder="Digite o RA do aluno">
+                </div>
+                <ul class="lista-adicionar">
+
+                    <li class="dados-alunosAdicionar">
+                        <div class="dados3">
+                            <div class="img-aluno">
+                                <img src="../assets/img-aluno.jpg" alt="" class="img-aluno">
+                            </div>
+                            <p class="nome-aluno">Isabelly Santos</p>
+                        </div>
+                        <div class="dados5">
+                            <p class="ra">RA: 847256731</p>
+                            <input type="checkbox" id="check1" name="aluno">
+                            <label for="check1" class="checkbox"></label>
+                        </div>
+                    </li>
+                    <li class="dados-alunosAdicionar">
+                        <div class="dados3">
+                            <div class="img-aluno">
+                                <img src="../assets/img-aluno.jpg" alt="" class="img-aluno">
+                            </div>
+                            <p class="nome-aluno">Isabelly Santos</p>
+                        </div>
+                        <div class="dados5">
+                            <p class="ra">RA: 847256731</p>
+                            <input type="checkbox" id="check2" name="aluno">
+                            <label for="check2" class="checkbox"></label>
+                        </div>
+                    </li>
+                    
+                </ul>
+                 
+                <button class="criar" type="submit">Criar</button>
+            </div>
         </div>
 
     </div>
@@ -127,4 +280,5 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
