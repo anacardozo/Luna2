@@ -186,73 +186,74 @@
             <h1>CADASTRO ALUNO</h1>
 
             <form class="cadastro-alunos">
-                <div class="grupo-esquerdo3">
-                    <!-- Dados do cadastro dos alunos -->
-                    <div class="box4">
-                        <label for="NomeAluno">NOME</label>
-                        <input type="text" placeholder="Nome" class="nomeAluno">
-                        <ion-icon name="create" class="icone"></ion-icon>
+                <div class="grupos-container">
+                    <div class="grupo-esquerdo3">
+                        <!-- Dados do cadastro dos alunos -->
+                        <div class="box4">
+                            <label for="NomeAluno">NOME</label>
+                            <input type="text" placeholder="Nome" class="nomeAluno">
+                            <ion-icon name="create" class="icone"></ion-icon>
+                        </div>
+                        <div class="box4">
+                            <label for="cpfAluno">CPF</label>
+                            <input type="text" placeholder="CPF" class="cpfAluno">
+                            <ion-icon name="create" class="icone"></ion-icon>
+                        </div>
+                        <div class="box4">
+                            <label for="serie">SÉRIE</label>
+                            <input type="text" placeholder="Série" class="serie">
+                            <ion-icon name="create" class="icone"></ion-icon>
+                        </div>
+                        <div class="box4">
+                            <label for="ra">RA</label>
+                            <input type="text" placeholder="Indique o RA da criança" class="ra">
+                            <ion-icon name="create" class="icone"></ion-icon>
+                        </div>
+                        <p>LAUDO DE TDAH DA CRIANÇA</p>
+                        <div class="btn-imagem">
+                            <label class="btn-camera" for="input-file">
+                                <ion-icon name="image"></ion-icon>
+                            </label>
+                            <input type="file" id="input-file" name="imagem" accept="image/*" class="img-laudo"
+                                style="display: none;">
+                        </div>
                     </div>
-                    <div class="box4">
-                        <label for="cpfAluno">CPF</label>
-                        <input type="text" placeholder="CPF" class="cpfAluno">
-                        <ion-icon name="create" class="icone"></ion-icon>
-                    </div>
-                    <div class="box4">
-                        <label for="serie">SÉRIE</label>
-                        <input type="text" placeholder="Série" class="serie">
-                        <ion-icon name="create" class="icone"></ion-icon>
-                    </div>
-                    <div class="box4">
-                        <label for="ra">RA</label>
-                        <input type="text" placeholder="Indique o RA da criança" class="ra">
-                        <ion-icon name="create" class="icone"></ion-icon>
-                    </div>
-                    <p>LAUDO DE TDAH DA CRIANÇA</p>
-                    <div class="btn-imagem">
-                        <label class="btn-camera" for="input-file">
-                            <ion-icon name="image"></ion-icon>
-                        </label>
-                        <input type="file" id="input-file" name="imagem" accept="image/*" class="img-laudo"
-                            style="display: none;">
+
+                    <div class="grupo-direita3">
+                        <div class="box4">
+                            <label for="sobrenomeAluno">SOBRENOME</label>
+                            <input type="text" placeholder="Sobrenome" class="sobrenomeAluno">
+                            <ion-icon name="create" class="icone"></ion-icon>
+                        </div>
+                        <div class="box4">
+                            <label for="idade">IDADE</label>
+                            <input type="text" placeholder="Data de nascimento" class="idade">
+                            <ion-icon name="create" class="icone"></ion-icon>
+                        </div>
+                        <div class="box4">
+                            <label for="escola">ESCOLA</label>
+                            <input type="text" placeholder="Escola" class="escola">
+                            <ion-icon name="create" class="icone"></ion-icon>
+                        </div>
+                        <div class="box4">
+                            <label for="emailAluno">E-MAIL</label>
+                            <input type="text" placeholder="E-mail" class="emailAluno">
+                            <ion-icon name="create" class="icone"></ion-icon>
+                        </div>
+                        <p>IMAGEM DO ROSTO DA CRIANÇA</p>
+                        <div class="btn-imagem">
+                            <label class="btn-camera" for="input-file">
+                                <ion-icon name="image"></ion-icon>
+                            </label>
+                            <input type="file" id="input-file" name="imagem" accept="image/*" class="img-rosto-crianca"
+                                style="display: none;">
+                        </div>
                     </div>
                 </div>
-
-                <div class="grupo-direita3">
-                    <div class="box4">
-                        <label for="sobrenomeAluno">SOBRENOME</label>
-                        <input type="text" placeholder="Sobrenome" class="sobrenomeAluno">
-                        <ion-icon name="create" class="icone"></ion-icon>
-                    </div>
-                    <div class="box4">
-                        <label for="idade">IDADE</label>
-                        <input type="text" placeholder="Data de nascimento" class="idade">
-                        <ion-icon name="create" class="icone"></ion-icon>
-                    </div>
-                    <div class="box4">
-                        <label for="escola">ESCOLA</label>
-                        <input type="text" placeholder="Escola" class="escola">
-                        <ion-icon name="create" class="icone"></ion-icon>
-                    </div>
-                    <div class="box4">
-                        <label for="emailAluno">E-MAIL</label>
-                        <input type="text" placeholder="E-mail" class="emailAluno">
-                        <ion-icon name="create" class="icone"></ion-icon>
-                    </div>
-                    <p>IMAGEM DO ROSTO DA CRIANÇA</p>
-                    <div class="btn-imagem">
-                        <label class="btn-camera" for="input-file">
-                            <ion-icon name="image"></ion-icon>
-                        </label>
-                        <input type="file" id="input-file" name="imagem" accept="image/*" class="img-rosto-crianca"
-                            style="display: none;">
-                    </div>
+                <div class="salvar2">
+                    <button type="submit" class="btn-salvar-aluno">Salvar</button>
                 </div>
             </form>
-
-            <div class="salvar2">
-                <button class="btn-salvar-aluno">Salvar</button>
-            </div>
         </div>
     </div>
 
