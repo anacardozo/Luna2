@@ -501,8 +501,7 @@ div .icone {
     cursor: pointer;
 }
 
-
-/* ----------------------- HOME ------------------------------------------ */
+/* ---------------------------- NAV-LATERAL ----------------------------- */
 
 .menu-lateral {
     display: flex;
@@ -601,6 +600,8 @@ div .icone {
 .content.active {
     width: 83vw;
 }
+
+/* HOME */
 
 .nav-pesquisa {
     position: fixed;
@@ -730,6 +731,24 @@ div .icone {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.pastas{
+    display: flex;
+    align-items: center;
+    background-color: #252525;
+    width: 50%;
+    height: 200px;
+    margin-top: 8%;
+    margin-left: 50px;
+    gap: 25px;
+    padding: 0;
+}
+
+.pastas ion-icon{
+    margin: 0;
+    color: var(--background-color);
+    font-size: 180px;
 }
 
 /* TELA CADASTRO PROFESSORES */
