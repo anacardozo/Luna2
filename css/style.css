@@ -132,6 +132,26 @@ div .icone {
     cursor: pointer;
 }
 
+.link{
+    
+    width: 100%;
+    margin-left: 110%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--text-color-primary);
+    /* margin-left: 40px; */
+    margin-top: 20px;
+}
+
+.link a{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--text-color-secondary);
+}
+
 
 /* Responsividade tela de Login */
 
@@ -393,7 +413,7 @@ div .icone {
     font-weight: 700;
     font-size: 40px;
     color: var(--text-color-primary);
-    margin-left: 40px;
+    margin-left: 0px;
     margin-bottom: 5px;
 
 }
@@ -403,14 +423,10 @@ div .icone {
     display: flex;
     background-color: transparent;
     width: 100%;
-    /* min-height: 100%; */
-    margin: 0;
-    padding: 0;
-    gap: 20px;
-    align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
-    text-align: start;
+    /* min-height: 100%; */
+    margin: 20px 0;
+    padding: 0;
 }
 
 .grupos-container {
@@ -473,6 +489,42 @@ div .icone {
     color: var(--text-color-secondary);
 }
 
+.btn-imagem1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.btn-camera1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    gap: 10px;
+    background-color: var(--text-color-secondary);
+    color: var(--text-color-tertiary);
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.btn-camera1:hover {
+    background-color: #288c95;
+    color: var(--text-color-tertiary);
+}
+
+.btn-camera1 ion-icon {
+    font-size: 30px;
+    color: inherit;
+}
+
 .box-cadastrar {
     display: flex;
     font-family: 'Inter', sans-serif;
@@ -481,7 +533,7 @@ div .icone {
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .btn-cadastrar {
@@ -564,6 +616,16 @@ div .icone {
 .menu-lateral.active ul li a {
     color: var(--text-color-primary);
 }
+
+.menu-lateral ul li.sair {
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.menu-lateral ul li.sair ion-icon{
+    font-size: 50px;
+}
+
 
 .botao-menu {
     display: flex;
@@ -736,19 +798,146 @@ div .icone {
 .pastas{
     display: flex;
     align-items: center;
-    background-color: #252525;
-    width: 50%;
     height: 200px;
-    margin-top: 8%;
+    margin-top: 10%;
     margin-left: 50px;
     gap: 25px;
     padding: 0;
 }
 
-.pastas ion-icon{
-    margin: 0;
+.pasta {
+  position: relative;
+  width: 210px;
+  height: 140px;
+  background-color: var(--background-color);
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin-bottom: 30px; 
+  color: var(--text-color-secondary);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Abinha no topo */
+.pasta::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 70px;
+  height: 15px;
+  background-color: var(--background-color);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 4px;
+}
+
+.pasta ion-icon {
+  position: absolute;
+  font-size: 30px;
+  margin-top: 5px;
+  right: 10px;
+}
+
+.pasta p {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.pasta:hover {
+  transform: translateY(-5px);
+}
+
+.materias{
+    position: absolute;
+    display: flex;
+    height: 380px;
+    width: 680px;
+    margin-top: 25%;
+    margin-left: 50px;
+    border-radius: 15px;
+    padding: 0;
+    background-color: #252525;
+}
+
+.materia{
+  position: relative;
+  width: 180px;
+  height: 120px;
+  background-color: var(--background-color);
+  margin: 30px 70px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out
+}
+
+.materia p{
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--text-color-secondary);
+}
+
+.materia:hover {
+  transform: translateY(-5px);
+}
+
+.box-img{
+  position: relative;
+  margin: 0 50px;
+}
+
+.box-img img{
+  width: 220px;
+  height: 160px;
+}
+
+.list-materias{
+  position: relative;
+  width: 770px;
+  height: 300px;
+  background-color: var(--background-color);
+  margin: 30px 50px;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.list-materias::-webkit-scrollbar{
+    display: none;
+}
+
+.list-materias label{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: var(--text-color-primary);
     color: var(--background-color);
-    font-size: 180px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.list-materias ion-icon{
+    font-size: 20px;
+    cursor: pointer;
 }
 
 /* TELA CADASTRO PROFESSORES */
