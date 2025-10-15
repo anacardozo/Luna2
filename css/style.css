@@ -493,7 +493,7 @@ div .icone {
     font-weight: 700;
     font-size: 40px;
     color: var(--text-color-primary);
-    margin-left: 85px;
+       margin-left: 85px;
     margin-bottom: 5px;
 
 }
@@ -747,7 +747,7 @@ div .icone {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  padding: 30px 10px 30px 50px;
+  padding: 30px 0px 30px 50px;
   top: 0;
   width: 90%;
   z-index: 8;
@@ -837,8 +837,10 @@ div .icone {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  width: 300px;
+  width: auto; 
+  min-width: 300px;
   height: 40px;
+  white-space: nowrap;
   color: var(--background-color);
   gap: 20px;
 }
@@ -1917,3 +1919,189 @@ input[type="checkbox"]:checked + .checkbox {
   font-weight: 700;
   cursor: pointer;
 }
+
+/*ALERTAS*/
+
+.body-modal{
+  background-color: #fff
+}
+
+.modal-materia{
+  position: relative;
+  display: flex;
+  background-color: var(--text-color-secondary);
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  border-radius: 10px;
+  align-items: flex-start;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  flex-direction: column;
+  z-index: 101;
+  display: none;
+  animation: modalIn 0.5s;
+}
+
+@keyframes modalIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes modalOut{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.modal-header{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  color: var(--background-color);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.modal-header p{
+  margin-top: 20px;
+}
+
+.modal-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.logo-materia{
+  display: flex;
+  width: 70px;
+  height: 70px;
+  background-color: var(--background-color);
+  margin-top: -50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-materia ion-icon{
+  color: var(--text-color-secondary);
+  width: 40px;
+  height: 40px;
+}
+
+
+
+.fechar-modal {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  color: var(--background-color);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+
+  .cadastro-materia{
+      display: flex;
+      background-color: transparent;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      /* flex-direction: column; */
+      /* min-height: 100%; */
+      margin: 30px 0;
+      padding: 0;
+
+  }
+
+  .box8 {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      width: 300px;
+      color: var(--background-color);
+      gap: 30px;
+      font-size: 16px;
+  }
+
+  .box8 input {
+      margin-top: 20px;
+      padding: 0;
+      border-color: var(--background-color);
+      color: var(--text-color-tertiary);
+  }
+
+  .box8 input::placeholder {
+      margin: 0;
+      padding: 0;
+      color: var(--text-color-tertiary);
+      font-size: 14px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+  }
+
+  .box8 label {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 40px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--background-color);
+  }
+
+  .box8 ion-icon {
+      font-size: 22px;
+      color: var(--background-color);
+  }
+
+  .box-salvar {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+}
+
+.btn-salvar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--text-color-secondary);
+    cursor: pointer;
+}
+
+.modal-shadown{
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 100;
+  display: none;
+}
+

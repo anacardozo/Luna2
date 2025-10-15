@@ -83,7 +83,6 @@
             <div class="grupo-itens-escola">
                 <div class="icones">
                     <ion-icon name="notifications"></ion-icon>
-                    <ion-icon name="cog"></ion-icon>
                 </div>
 
                 <p class="nome-escola">Olá, EMEI</p>
@@ -116,7 +115,7 @@
         <div class="materias">
 
             <div class="mat-1">
-                <div class="materia">
+                <div class="materia" onclick="ativarModal()">
                 <p>MATÉRIAS</p>
             </div>
 
@@ -149,6 +148,39 @@
             </div>
 
         </div>
+
+    </div>
+
+    <div class="modal-materia">
+        <ion-icon class="fechar-modal" name="close-outline"></ion-icon>
+            <div class="modal-header">
+                <div class="logo-materia">
+                    <ion-icon name="library-outline"></ion-icon>
+                </div>
+                <p>CADASTRO MATÉRIA</p>
+            </div>
+
+            <div class="modal-body">
+                <form class="cadastro-materia">
+                       <div class="box8">
+                            <label>CÓDIGO</label>
+                            <input type="text" placeholder="Codigo">
+                            <ion-icon name="create" class="icone"></ion-icon>
+                        </div>
+                        <div class="box8">
+                            <label>NOME</label>
+                            <input type="text" placeholder="Nome">
+                            <ion-icon name="create" class="icone"></ion-icon>
+                        </div>
+
+                        <div class="box-salvar">
+                            <button type="submit" class="btn-salvar">Salvar</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+
+    <div class="modal-shadown">
 
     </div>
 
