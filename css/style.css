@@ -2069,7 +2069,7 @@ input[type="checkbox"]:checked + .checkbox {
       color: var(--background-color);
   }
 
-  .box-salvar {
+  .box-salvar2 {
     display: flex;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -2080,7 +2080,7 @@ input[type="checkbox"]:checked + .checkbox {
     /* margin-top: 20px; */
 }
 
-.btn-salvar {
+.btn-salvar2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2100,8 +2100,26 @@ input[type="checkbox"]:checked + .checkbox {
 .modal-shadown{
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 100;
   display: none;
+  animation: shadownIn 0.5s;
 }
 
+@keyframes shadownIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes shadownOut{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

@@ -19,11 +19,20 @@ const btnFechar = document.querySelector('.fechar-modal');
 const mShadown = document.querySelector('.modal-shadown');
 
 function ativarModal() {
+  modal.style.animation = "modalIn .5s"
+  mShadown.style.animation = "shadownIn .5s"
+
   modal.style.display = "flex";
   mShadown.style.display = "block";
 }
 
 btnFechar.addEventListener("click", () => {
-  modal.style.display = "none";
-  mShadown.style.display = "none";
-})
+   modal.style.animation = "modalOut .5s"
+   mShadown.style.animation = "shadownOut .5s"
+
+  setTimeout(() => {
+    modal.style.display = "none";
+    mShadown.style.display = "none";
+  }, 499
+  )
+});
