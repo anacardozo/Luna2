@@ -127,7 +127,7 @@
              <div class="list-materias">
                 <label for="materia">
                     Língua Portuguesa
-                    <ion-icon name="trash"></ion-icon>
+                    <ion-icon name="trash" onclick="ativarModalM()"></ion-icon>
                 </label>
                 <label for="materia">
                     Língua Portuguesa
@@ -150,6 +150,8 @@
         </div>
 
     </div>
+
+    <!-- CRIAR MATÉRIA -->
 
     <div class="modal-materia">
         <ion-icon class="fechar-modal" name="close-outline"></ion-icon>
@@ -183,6 +185,35 @@
     <div class="modal-shadown">
 
     </div>
+
+    <!-- EXCLUIR PROFESSOR -->
+
+        <div class="modal-materiaE">
+            <ion-icon class="fechar-modalE" name="close-outline"></ion-icon>
+            <div class="modal-headerE">
+                <div class="logo-materia">
+                    <ion-icon name="library-outline"></ion-icon>
+                </div>
+                <p>Deseja excluir a Matéria?</p>
+            </div>
+
+            <div class="modal-bodyE">
+                <div class="opcao-excluir">
+                    <div>
+                        <ion-icon name="thumbs-up"></ion-icon>
+                    </div>
+
+                    <div>
+                        <ion-icon name="thumbs-down"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-shadownE">
+
+        </div>
+
 
     <script src="../script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

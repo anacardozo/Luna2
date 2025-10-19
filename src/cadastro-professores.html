@@ -107,7 +107,7 @@
                     </div>
                     <div class="dados2">
                         <p class="cpf">CPF: 645.347.653-76</p>
-                        <ion-icon name="trash"></ion-icon>
+                        <ion-icon name="trash" onclick="ativarModal2()"></ion-icon>
                     </div>
                 </li>
                 <li class="dados-pro">
@@ -252,8 +252,37 @@
                 </div>
             </form>
         </div>
+
+        <!-- EXCLUIR PROFESSOR -->
+
+        <div class="modal-professor">
+            <ion-icon class="fechar-modal2" name="close-outline"></ion-icon>
+            <div class="modal-header2">
+                <div class="logo-professor">
+                    <ion-icon name="person"></ion-icon>
+                </div>
+                <p>Deseja excluir o Professor?</p>
+            </div>
+
+            <div class="modal-body2">
+                <div class="opcao-excluir">
+                    <div>
+                        <ion-icon name="thumbs-up"></ion-icon>
+                    </div>
+
+                    <div>
+                        <ion-icon name="thumbs-down"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-shadown2">
+
+        </div>
+
     </div>
-    <script src="../script.js"></script>
+    <script src="../professor.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

@@ -1940,7 +1940,7 @@ input[type="checkbox"]:checked + .checkbox {
   flex-direction: column;
   z-index: 101;
   display: none;
-  animation: modalIn 0.5s;
+  animation: modalIn 0.5s ease;
 }
 
 @keyframes modalIn{
@@ -2116,6 +2116,570 @@ input[type="checkbox"]:checked + .checkbox {
 }
 
 @keyframes shadownOut{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.body-1{
+  background-color: #fff
+}
+
+.modal-professor{
+  position: fixed;
+  display: flex;
+  background-color: var(--text-color-secondary);
+  width: 400px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  align-items: flex-start;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  flex-direction: column;
+  z-index: 103;
+  display: none;
+  animation: modal2In 0.5s ease;
+}
+
+@keyframes modal2In{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes modal2Out{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.modal-header2{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  color: var(--text-color-tertiary);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.modal-header2 p{
+  margin-top: 20px;
+}
+
+.modal-body2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.opcao-excluir{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 300px;
+  gap: 60px;
+}
+
+.opcao-excluir div{
+  background-color: #005a63;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: var(--text-color-secondary);
+  cursor: pointer;
+}
+
+.opcao-excluir ion-icon{
+  font-size: 20px;
+}
+
+.logo-professor{
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: var(--background-color);
+  margin-top: -50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-professor ion-icon{
+  color: var(--text-color-secondary);
+  width: 30px;
+  height: 30px;
+}
+
+.fechar-modal2 {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  color: var(--background-color);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.modal-shadown2{
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 102;
+  display: none;
+  animation: shadown2In 0.5s;
+}
+
+@keyframes shadown2In{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes shadown2Out{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.modal-aluno{
+  position: fixed;
+  display: flex;
+  background-color: var(--text-color-secondary);
+  width: 400px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  align-items: flex-start;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  flex-direction: column;
+  z-index: 103;
+  display: none;
+  animation: modal3In 0.5s ease;
+}
+
+@keyframes modal3In{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes modal3Out{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.modal-header3{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  color: var(--text-color-tertiary);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.modal-header3 p{
+  margin-top: 20px;
+}
+
+.modal-body3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.opcao-excluir{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 300px;
+  gap: 60px;
+}
+
+.opcao-excluir div{
+  background-color: #005a63;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: var(--text-color-secondary);
+  cursor: pointer;
+}
+
+.opcao-excluir ion-icon{
+  font-size: 20px;
+}
+
+.logo-aluno{
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: var(--background-color);
+  margin-top: -50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-aluno ion-icon{
+  color: var(--text-color-secondary);
+  width: 30px;
+  height: 30px;
+}
+
+.fechar-modal3 {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  color: var(--background-color);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.modal-shadown3{
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 102;
+  display: none;
+  animation: shadown3In 0.5s;
+}
+
+@keyframes shadown3In{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes shadown3Out{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.modal-turma{
+  position: fixed;
+  display: flex;
+  background-color: var(--text-color-secondary);
+  width: 400px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  align-items: flex-start;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  flex-direction: column;
+  z-index: 103;
+  display: none;
+  animation: modal4In 0.5s ease;
+}
+
+@keyframes modal4In{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes modal4Out{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.modal-header4{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  color: var(--text-color-tertiary);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.modal-header4 p{
+  margin-top: 20px;
+}
+
+.modal-body4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.opcao-excluir{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 300px;
+  gap: 60px;
+}
+
+.opcao-excluir div{
+  background-color: #005a63;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: var(--text-color-secondary);
+  cursor: pointer;
+}
+
+.opcao-excluir ion-icon{
+  font-size: 20px;
+}
+
+.logo-turma{
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: var(--background-color);
+  margin-top: -50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-turma ion-icon{
+  color: var(--text-color-secondary);
+  width: 30px;
+  height: 30px;
+}
+
+.fechar-modal4 {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  color: var(--background-color);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.modal-shadown4{
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 102;
+  display: none;
+  animation: shadown4In 0.5s;
+}
+
+@keyframes shadown4In{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes shadown4Out{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.modal-materiaE{
+  position: fixed;
+  display: flex;
+  background-color: var(--text-color-secondary);
+  width: 400px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  align-items: flex-start;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  flex-direction: column;
+  z-index: 103;
+  display: none;
+  animation: modalEIn 0.5s ease;
+}
+
+@keyframes modalEIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes modalEOut{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.modal-headerE{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  color: var(--text-color-tertiary);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.modal-headerE p{
+  margin-top: 20px;
+}
+
+.modal-bodyE{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.opcao-excluir{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 300px;
+  gap: 60px;
+}
+
+.opcao-excluir div{
+  background-color: #005a63;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: var(--text-color-secondary);
+  cursor: pointer;
+}
+
+.opcao-excluir ion-icon{
+  font-size: 20px;
+}
+
+.logo-materia{
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: var(--background-color);
+  margin-top: -50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-materia ion-icon{
+  color: var(--text-color-secondary);
+  width: 30px;
+  height: 30px;
+}
+
+.fechar-modalE {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  color: var(--background-color);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.modal-shadownE{
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 102;
+  display: none;
+  animation: shadown4In 0.5s;
+}
+
+@keyframes shadownEIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes shadownEOut{
   0%{
     opacity: 1;
   }

@@ -102,7 +102,7 @@
             <div class="salas">
                 <div class="pasta-turma">
                     <p class="nome-turma">1°A</p>
-                    <ion-icon name="trash"></ion-icon>
+                    <ion-icon name="trash" onclick="ativarModal4()"></ion-icon>
                 </div>
                 <div class="pasta-turma">
                     <p class="nome-turma">2°A</p>
@@ -143,7 +143,7 @@
                     </div>
                     <div class="dados4">
                         <p class="ra">RA: 847256731</p>
-                        <ion-icon name="trash"></ion-icon>
+                        <ion-icon name="trash" onclick="ativarModal3()"></ion-icon>
                     </div>
                 </li>
                 <li class="dados-alunoTurma">
@@ -280,9 +280,66 @@
             </div>
         </div>
 
+        <!-- EXCLUIR ALUNO -->
+
+        <div class="modal-aluno">
+            <ion-icon class="fechar-modal3" name="close-outline"></ion-icon>
+            <div class="modal-header3">
+                <div class="logo-aluno">
+                    <ion-icon name="school"></ion-icon>
+                </div>
+                <p>Deseja excluir o Aluno?</p>
+            </div>
+
+            <div class="modal-body3">
+                <div class="opcao-excluir">
+                    <div>
+                        <ion-icon name="thumbs-up"></ion-icon>
+                    </div>
+
+                    <div>
+                        <ion-icon name="thumbs-down"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-shadown3">
+
+        </div>
+    </div>  
+
+        <!-- EXCLUIR TURMA -->
+            <div class="modal-turma">
+            <ion-icon class="fechar-modal4" name="close-outline"></ion-icon>
+            <div class="modal-header4">
+                <div class="logo-turma">
+                    <ion-icon name="school"></ion-icon>
+                </div>
+                <p>Deseja excluir a Turma?</p>
+            </div>
+
+            <div class="modal-body4">
+                <div class="opcao-excluir">
+                    <div>
+                        <ion-icon name="thumbs-up"></ion-icon>
+                    </div>
+
+                    <div>
+                        <ion-icon name="thumbs-down"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-shadown4">
+
+        </div>
+
     </div>
 
-    <script src="../script.js"></script>
+    <script src="../aluno.js"></script>
+    <script src="../turma.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

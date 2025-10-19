@@ -10,7 +10,7 @@ menu.addEventListener("click", () => {
 });
 
 
-// ALERTAS
+// ALERTAS TELA HOME
 const modal = document.querySelector('.modal-materia');
 const mheader = document.querySelector('.modal-header');
 const lgMateria = document.querySelector('.logo-materia');
@@ -30,9 +30,37 @@ btnFechar.addEventListener("click", () => {
    modal.style.animation = "modalOut .5s"
    mShadown.style.animation = "shadownOut .5s"
 
-  setTimeout(() => {
-    modal.style.display = "none";
-    mShadown.style.display = "none";
-  }, 499
-  )
+    modal.addEventListener('animationend', function handler() {
+        modal.style.display = "none";
+        mShadown.style.display = "none";
+
+        modal.removeEventListener('animationend', handler); 
+    }, { once: true }); 
+});
+
+const modalE = document.querySelector('.modal-materiaE');
+const mheaderE = document.querySelector('.modal-headerE');
+const lgMateriaE = document.querySelector('.logo-materia');
+const mbodyE = document.querySelector('.modal-bodyE');
+const btnFecharE = document.querySelector('.fechar-modalE');
+const mShadownE = document.querySelector('.modal-shadownE');
+
+function ativarModalM() {
+  modalE.style.animation = "modalEIn .5s"
+  mShadownE.style.animation = "shadownEIn .5s"
+
+  modalE.style.display = "flex";
+  mShadownE.style.display = "block";
+}
+
+btnFecharE.addEventListener("click", () => {
+   modalE.style.animation = "modalEOut .5s"
+   mShadownE.style.animation = "shadownEOut .5s"
+
+    modalE.addEventListener('animationend', function handler() {
+        modalE.style.display = "none";
+        mShadownE.style.display = "none";
+
+        modalE.removeEventListener('animationend', handler); 
+    }, { once: true }); 
 });
