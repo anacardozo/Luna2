@@ -623,7 +623,8 @@ div .icone {
   margin-left: 50px;
   border-radius: 15px;
   padding: 0;
-  background-color: #252525;
+  background-color: var(--text-color-primary);
+  box-shadow: 0px 0px 23px -4px var(--blur);
 }
 
 .materia {
@@ -756,6 +757,9 @@ div .icone {
 
 .img-prof {
   display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -763,8 +767,10 @@ div .icone {
 }
 
 .img-prof img {
-  height: 40px;
-  width: 40px;
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -1054,9 +1060,10 @@ div .icone {
 
 .img-escola-dados {
   display: flex;
+  flex: 0 0 auto;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 10px;
   background-color: transparent;
   width: 160px;
   height: 160px;
@@ -1078,7 +1085,7 @@ div .icone {
   flex-direction: column;
   background-color: var(--text-color-primary);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 40px;
+  margin-top: 20px;
   width: 250px;
   height: 500px;
   border-radius: 10px;
@@ -2462,6 +2469,281 @@ input[type="checkbox"]:checked + .checkbox {
     height: 50px;
     font-size: 25px;
 }
+
+  /* NAV-LATERAL */
+
+.menu-lateral ion-icon {
+  font-size: 35px;
+}
+.menu-lateral.active ul li:hover {
+  width: 220px;
+}
+
+.menu-lateral ul li a { 
+  font-size: 16px;
+}
+
+.menu-lateral ul li.sair {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.menu-lateral ul li.sair ion-icon {
+  font-size: 40px;
+}
+.content {
+  width: 90vw;
+}
+
+.content.active {
+  width: 80vw;
+}
+
+  /* TELA HOME */
+
+  .nav-pesquisa {
+  width: 90%;
+}
+
+.nav-pesquisa svg{
+  margin-right: 50px;
+}
+
+.nav-pesquisa.active {
+  width: 80%;
+}
+
+
+.grupo-itens-escola p {
+  font-size: 16px;
+}
+
+.icones {
+  font-size: 28px;
+}
+
+.img-escola {
+  height: 40px;
+  width: 40px;
+}
+
+.pastas {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  margin-top: 10%;
+  margin-left: 50px;
+  gap: 25px;
+  padding: 0;
+}
+
+.pasta {
+  position: relative;
+  width: 170px;
+  height: 100px;
+  background-color: var(--background-color);
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin-bottom: 30px;
+  color: var(--text-color-secondary);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.pasta::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 60px;
+  height: 15px;
+  background-color: var(--background-color);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 4px;
+}
+
+.pasta ion-icon {
+  position: absolute;
+  font-size: 25px;
+  margin-top: 5px;
+  right: 10px;
+}
+
+.pasta p {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.pasta:hover {
+  transform: translateY(-5px);
+}
+
+.materias {
+  height: 380px;
+  width: 570px;
+  margin-top: 30%;
+}
+
+.materia {
+  width: 160px;
+  height: 100px;
+}
+
+.materia p {
+  font-size: 12px;
+}
+
+
+.box-img img {
+  width: 200px;
+  height: 140px;
+}
+
+.list-materias {
+  width: 770px;
+  height: 300px;
+  margin: 30px 20px;
+}
+
+.list-materias label {
+  height: 50px;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.list-materias ion-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* TELA PROFESSORES */
+
+.lista {
+  width: 400px;
+  margin-top: 12%;
+}
+
+.list-pro {
+  width: 88%;
+}
+
+.dados-pro {
+  font-size: 14px;
+}
+
+.dados2 {
+  font-size: 14px;
+}
+.dados2 ion-icon {
+  font-size: 18px;
+}
+
+/* CADASTRO PROFESSORES */
+.professores {
+  width: 30%;
+  margin-top: 8%;
+  margin-left: 15%;
+  align-items: center;
+  justify-content: center;
+}
+
+.professores h1 {
+  font-size: 20px;
+  width: 100%;
+}
+
+.cadastro-professores {
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.cadastro-professores .grupos-container{
+  gap: 50px;
+}
+
+.grupo-esquerdo,
+.grupo-direita {
+  gap: 5px;
+  width: 40%;
+}
+
+.box2 {
+  width: 190px;
+}
+
+
+.box2 input::placeholder {
+  font-size: 12px;
+}
+
+.box2 label {
+  font-size: 14px;
+}
+
+.box2 ion-icon {
+  font-size: 20px;
+}
+
+.professores p {
+  font-size: 14px;
+}
+
+.btn-imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+
+.btn-camera {
+  width: 90px;
+  height: 35px;
+}
+
+.btn-camera ion-icon {
+  font-size: 28px;
+}
+
+.salvar {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-salvar-pro {
+  padding: 10px 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--background-color);
+  color: var(--text-color-secondary);
+  width: 45%;
+  height: 40px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
 
 }
 
