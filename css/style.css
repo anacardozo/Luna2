@@ -444,7 +444,6 @@ div .icone {
   display: flex;
   align-items: center;
   gap: 20px;
-  /* diminui a distância entre eles */
 }
 
 .inputs-pesquisa {
@@ -2389,22 +2388,24 @@ input[type="checkbox"]:checked + .checkbox {
 
 /*Responsividade*/
 
-@media (max-width: 1920px){
+@media (min-width:1440px) and (max-width: 1920px){
   /* NAV-LATERAL */
 
 .menu-lateral ion-icon {
-  font-size: 55px;
+  font-size: 50px;
 }
+
+
 .menu-lateral.active ul li:hover {
-  width: 400px;
+  width: 300px;
 }
 
 .menu-lateral ul li a { 
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .menu-lateral ul li.sair {
-  margin-top: 10px;
+  margin-top: 160px;
   font-size: 26px;
 }
 
@@ -2412,12 +2413,188 @@ input[type="checkbox"]:checked + .checkbox {
   font-size: 60px;
 }
 .content {
-  width: 90vw;
+  width: 92vw;
 }
 
 .content.active {
-  width: 80vw;
+  width: 84vw;
 }
+
+/* TELA HOME */
+
+  .nav-pesquisa {
+  width: 90%;
+  padding: 30px 0px 30px 70px;
+}
+
+.nav-pesquisa.active {
+  width: 80%;
+}
+
+.inputs-pesquisa{
+  width: 400px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.inputs-pesquisa input{
+  width: 100%;
+  height: 40px;
+}
+
+.filtro{
+  height: 40px;
+  width: 120px;
+  font-size: 16px;
+}
+
+
+.grupo-itens-escola p {
+  font-size: 18px;
+}
+
+.icones {
+  font-size: 30px;
+}
+
+.img-escola {
+  height: 50px;
+  width: 50px;
+}
+
+.pastas {
+  height: 300px;
+  margin-top: 8%;
+  margin-left: 50px;
+}
+
+.pasta {
+  width: 250px;
+  height: 180px;
+}
+
+.pasta::before {
+  width: 80px;
+  height: 20px;
+}
+
+.pasta ion-icon {
+  font-size: 35px;
+}
+
+.pasta p {
+  font-size: 16px;
+}
+
+.materias {
+  height: 500px;
+  width: 800px;
+  margin-top: 25%;
+}
+
+.materia {
+  width: 220px;
+  height: 160px;
+}
+
+.materia p {
+  font-size: 12px;
+}
+
+.box-img {
+  margin: 0 60px;
+}
+
+.box-img img {
+  width: 240px;
+  height: 180px;
+}
+
+.list-materias {
+  width: 600px;
+  height: 360px;
+  margin: 30px 40px;
+}
+
+.list-materias label {
+  font-size: 18px;
+}
+
+.list-materias ion-icon {
+  font-size: 22px;
+}
+
+/* TELA PROFESSORES */
+
+.lista {
+  width: 630px;
+}
+
+/* CADASTRO PROFESSORES */
+
+.cadastro-professores .grupos-container{
+  gap: 50px;
+}
+
+.grupo-esquerdo,
+.grupo-direita {
+  gap: 15px;
+}
+
+.professores p {
+  margin-bottom: 10px;
+}
+
+
+.salvar {
+  margin-top: 20px;
+}
+
+/* TELA ALUNOS */
+
+.lista2 {
+  width: 630px;
+}
+
+
+
+/* CADASTRO PROFESSORES */
+
+.cadastro-professores .grupos-container{
+  gap: 50px;
+}
+
+.grupo-esquerdo3,
+.grupo-direita3 {
+  gap: 15px;
+}
+
+.alunos p {
+  margin-bottom: 10px;
+}
+
+
+.salvar2 {
+  margin-top: 20px;
+}
+
+/* TELA ALUNOS */
+
+.lista-turma {
+  width: 650px;
+}
+
+.profResponsavel{
+  width: 85%;
+}
+
+.lista-alunosTurma{
+  width: 85%;
+}
+
+.turma{
+  margin-top: 120px;
+}
+
 
 }
 
@@ -2551,6 +2728,7 @@ input[type="checkbox"]:checked + .checkbox {
 
   .nav-pesquisa {
   width: 90%;
+  
 }
 
 .nav-pesquisa svg{
