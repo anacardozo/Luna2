@@ -706,7 +706,7 @@ div .icone {
 
 /* Calendario */
 
-.container{
+.cal-container{
   display: flex;
   margin-left: 180px;
   margin-top: 10%;
@@ -754,7 +754,7 @@ div .icone {
   position: relative;
 }
 
-.nav-buttons{
+.cal-nav-buttons{
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -766,7 +766,7 @@ div .icone {
   z-index: 1;
 }
 
-.nav-btn{
+.cal-nav-btn{
   background-color: var(--text-color-primary);
   color: var(--text-color-tertiary);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
@@ -781,7 +781,7 @@ div .icone {
   justify-content: center;
 }
 
-.nav-btn:hover{
+.cal-nav-btn:hover{
   background-color: rgba(255, 255, 255, 0.3);
   transform: scale(1.1);
 }
@@ -893,7 +893,7 @@ div .icone {
 }
 
 /* Painel de eventos */
-.event-panel{
+.cal-event-panel{
   background-color: var(--text-color-primary);
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -903,7 +903,7 @@ div .icone {
   height: 60px;
 }
 
-.event-header{
+.cal-event-header{
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -912,18 +912,18 @@ div .icone {
   padding-bottom: 0.5rem;
 }
 
-.event-date{
+.cal-event-date{
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--text-color-tertiary);
 }
 
-.event-list{
+.cal-event-list{
   max-height: 350px;
   overflow-y: auto;
 }
 
-.event-item{
+.cal-event-item{
   padding: 1rem;
   margin-bottom: 0.5rem;
   background-color: #ccc;
@@ -935,11 +935,11 @@ div .icone {
   transition: transform 0.2s ease;
 }
 
-.event-item:hover{
+.cal-event-item:hover{
   transform: translateX(5px);
 }
 
-.event-color{
+.cal-event-color{
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -947,13 +947,13 @@ div .icone {
   flex-shrink: 0;
 }
 
-.event-time{
+.cal-event-time{
   font-weight: 500;
   color: var(--text-color-tertiary);
   min-width: 800px;
 }
 
-.event-text{
+.cal-event-text{
   flex: 1;
   color: var(--text-color-tertiary)
 }
